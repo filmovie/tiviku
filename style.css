@@ -1,0 +1,41 @@
+body { 
+background: red;
+}
+.video-player {
+  width:100%;
+  height: auto;
+}
+.video-player {
+  height: 670px;
+  background: red;
+}
+.video-player video {
+  width: 100%;
+  display: block;
+  background: black;
+}
+.thumbs {height: 550px;
+  background-color: black;
+  overflow: auto;
+  margin-top: 15px;
+}
+.thumbs span {
+  background: mistyrose;
+  border: 3px solid red;
+  border-radius: 13px ;
+  width: 150px;
+  color: green;
+  margin-right: 13px;
+}
+.gfilm {
+  border: 3px solid red;
+  border-radius: 13px ;
+  width: 150px;
+}
+button {
+  border: 3px transparent solid;
+  border-radius: 13px ;
+  color: red;
+  background-color: transparent;
+  padding: 15px;
+}
