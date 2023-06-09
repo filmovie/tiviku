@@ -11,7 +11,13 @@
 								<button class="btn btn-primary" onclick="toggleMusic()" id="play" data-play="false"> <i class="fa fa-play"></i> <span id="btn-text">PLAY</span></button></div>
 												
 								<video id="video" controls autoplay src="https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(dc9040ad-a4e1-4d08-883c-a65542b69602)/index.m3u8" width="100%" height="120%"> alt=""></video>
-								<script src="https://dl.dropbox.com/s/xgxbn7jo7606613/script.js"></script>
+								<script>
+												const myAudio = document.getElementById("video");
+const btn = document.getElementById("play");
+const btnIcon = document.querySelector("#play> i");
+const btnText = document.getElementById("btn-text");
+const toggleMusic = () => { const dataPlay = btn.getAttribute('data-play'); if(dataPlay === 'false') { btn.setAttribute('data-play', 'true'); myAudio.play(); btnIcon.classList.remove("fa-play"); btnIcon.classList.add("fa-pause"); btnText.innerText = "PAUSE"; } else { btn.setAttribute('data-play', 'false'); myAudio.pause(); btnIcon.classList.remove("fa-pause"); btnIcon.classList.add("fa-play"); btnText.innerText = "PLAY"; } }; myAudio.onpause = () => { btn.setAttribute('data-play', 'false'); myAudio.pause(); btnIcon.classList.remove("fa-pause"); btnIcon.classList.add("fa-play"); btnText.innerText = "PLAY"; }; 
+								</script>
 
 </body>
 </html>
