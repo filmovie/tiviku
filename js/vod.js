@@ -4,7 +4,7 @@ document.body.appendChild(script);
 
 let gambar1 = document.createElement('img');
 gambar1.id = "gambar1";
-gambar1.src = "../tiviku.png";
+gambar1.src = "../tiviku.gif";
 document.getElementById('flm2').appendChild(gambar1);
 let marquee = document.createElement('marquee');
 marquee.id = "marquee1";
