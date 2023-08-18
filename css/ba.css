@@ -1,18 +1,5 @@
-@charset "UTF-8";
-.vjs-modal-dialog .vjs-modal-dialog-content, .video-js .vjs-modal-dialog, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 body {
 				background: black;
-}
-
-.vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-  text-align: center;
 }
 
 @font-face {
@@ -120,51 +107,6 @@ body {
   content: "\f10b";
 }
 
-.vjs-icon-subtitles, .video-js .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder, .video-js .vjs-subtitles-button .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-subtitles:before, .video-js .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js .vjs-subtitles-button .vjs-icon-placeholder:before {
-  content: "\f10c";
-}
-
-.vjs-icon-captions, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder, .video-js .vjs-captions-button .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-captions:before, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js .vjs-captions-button .vjs-icon-placeholder:before {
-  content: "\f10d";
-}
-
-.vjs-icon-chapters, .video-js .vjs-chapters-button .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-chapters:before, .video-js .vjs-chapters-button .vjs-icon-placeholder:before {
-  content: "\f10e";
-}
-
-.vjs-icon-share {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-share:before {
-  content: "\f10f";
-}
 
 .vjs-icon-cog {
   font-family: VideoJS;
@@ -202,15 +144,6 @@ body {
   content: "\f113";
 }
 
-.vjs-icon-hd {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-hd:before {
-  content: "\f114";
-}
-
 .vjs-icon-cancel, .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder {
   font-family: VideoJS;
   font-weight: normal;
@@ -218,69 +151,6 @@ body {
 }
 .vjs-icon-cancel:before, .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder:before {
   content: "\f115";
-}
-
-.vjs-icon-replay, .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-replay:before, .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder:before {
-  content: "\f116";
-}
-
-.vjs-icon-facebook {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-facebook:before {
-  content: "\f117";
-}
-
-.vjs-icon-gplus {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-gplus:before {
-  content: "\f118";
-}
-
-.vjs-icon-linkedin {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-linkedin:before {
-  content: "\f119";
-}
-
-.vjs-icon-twitter {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-twitter:before {
-  content: "\f11a";
-}
-
-.vjs-icon-tumblr {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-tumblr:before {
-  content: "\f11b";
-}
-
-.vjs-icon-pinterest {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-pinterest:before {
-  content: "\f11c";
 }
 
 .vjs-icon-audio-description, .video-js .vjs-descriptions-button .vjs-icon-placeholder {
@@ -299,42 +169,6 @@ body {
 }
 .vjs-icon-audio:before, .video-js .vjs-audio-button .vjs-icon-placeholder:before {
   content: "\f11e";
-}
-
-.vjs-icon-next-item {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-next-item:before {
-  content: "\f11f";
-}
-
-.vjs-icon-previous-item {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-previous-item:before {
-  content: "\f120";
-}
-
-.vjs-icon-picture-in-picture-enter, .video-js .vjs-picture-in-picture-control .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-picture-in-picture-enter:before, .video-js .vjs-picture-in-picture-control .vjs-icon-placeholder:before {
-  content: "\f121";
-}
-
-.vjs-icon-picture-in-picture-exit, .video-js.vjs-picture-in-picture .vjs-picture-in-picture-control .vjs-icon-placeholder {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
-}
-.vjs-icon-picture-in-picture-exit:before, .video-js.vjs-picture-in-picture .vjs-picture-in-picture-control .vjs-icon-placeholder:before {
-  content: "\f122";
 }
 
 .video-js {
@@ -1317,20 +1151,6 @@ body.vjs-full-window {
   color: red;
 }
 
-.video-js .vjs-time-control {
-  flex: none;
-  font-size: 1em;
-  line-height: 3em;
-  min-width: 2em;
-  width: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.vjs-live .vjs-time-control {
-  display: none;
-}
-
 .video-js .vjs-current-time,
 .vjs-no-flex .vjs-current-time {
   display: none;
@@ -1376,14 +1196,6 @@ body.vjs-full-window {
   font-size: 1.4em;
   text-align: center;
   margin-bottom: 0.1em;
-}
-
-.vjs-subtitles {
-  color: #fff;
-}
-
-.vjs-captions {
-  color: #fc6;
 }
 
 .vjs-tt-cue {
