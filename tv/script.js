@@ -1,152 +1,120 @@
-'use strict';
+//Plyr player
+const videoPlayer = new Plyr(
+  "#myPlayer",
+  (defaults = {
+    title: "Donelfantastic", // Custom media title
+    hideControls: true, // Auto hide the controls on playing
+    // Learn more on: https://github.com/sampotts/plyr/blob/master/src/js/config/defaults.js
+    controls: [
+      "play-large",
+      "play",
+      "progress",
+      "current-time",
+      "mute",
+      "volume",
+      "fullscreen"
+    ]
+  })
+);
 
-var videoPlayer = window.videoPlayer || {};
+document.addEventListener("DOMContentLoaded", () => {
+  const source =
+    "https://av-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd";
 
-(function () {  
-  var options = {
-    autoplay: true, 
-    controls: true, 
-    muted: false, 
-    // fluid: true,
-    playbackRates: [1, 1.5, 2, 2.5],
-    inactivityTimeout: 0, // 0: user will never be considered inactive
-    width: 500
-  };
-  var url = 'https://s3-us-west-1.amazonaws.com/';
-  var queryString = '?path=joepc';  // replace with 'location.search'
-  
-  var params = {};
-  if (queryString) { // parameterize the query string (Credit: https://stackoverflow.com/a/21152762/2213679)
-    queryString.substr(1).split('&').forEach(function(item) {
-      var s = item.split('='), k = s[0], v = s[1] && decodeURIComponent(s[1]);
-      (params[k] = params[k] || []).push(v);
-    });  
-  }
-  
-  var baseUrl = url + params['path'] + '/';
-  var types = {mp4:'video/mp4',webm:'video/webm', m3u: 'application/x-mpegURL'};
+  const video = document.querySelector("#Pplayer");
+  // For options (second argument) see: https://github.com/sampotts/plyr/#options
+  const player = new Plyr(video);
+  // Expose player so it can be used from the console
 
-  var vPlaylistMax = 50;   // Look for videos up to Max
-  var vPlaylist = [];      // video playlist
-  var vExtension = '.mp4'; // extension (assume same for a series)
-  var vUrl;                // URL string to be built
+  window.player = player;
 
-  for (var i=1; i <= vPlaylistMax; i++) {
-    vUrl = baseUrl+i+vExtension;
-    if ( fileExists(vUrl) ) {
-      vPlaylist.push({sources: [{src: vUrl, type: types.mp4}]});
-    } else { break; } // exit loop on first missing file
-  }
-  
-  function fileExists(url) {
-    var http = new XMLHttpRequest();
-    // (method,url,async) 
-    // 'HEAD' -- same as GET request, but without response body.
-    // async:false -- send() does not return until response is received.
-    http.open('HEAD',url,false);
-    http.send();
-    return (http.status==200);    
-  }
+  // For more Shaka Player options, see: https://github.com/google/shaka-player
+  if (shaka.Player.isBrowserSupported()) {
+    // Install built-in polyfills
+    shaka.polyfill.installAll();
+    const shakaInstance = new shaka.Player(video);
 
-  var rate = 1; // playback starting rate (1x)
-  var player = videojs('playerOne', options);
-  
-  player.overlay({
-    // content: 'Default overlay content',
-    debug: false,
-    overlays: [{
-      content: '<h2>Playing <span id="playlist-current-number">1</span> of ' +vPlaylist.length+ '</h2>', //'The video is playing!',
+    shakaInstance.configure({
+      drm: {
+        clearKeys: {
+          // 'key-id-in-hex': 'key-in-hex',
+          "9ba3e153ef8956d6e2b0684fcf74f58f": "dbc28cb5c6426080f984a5b6d436bb30"
+        }
+      }
+    });
 
-      start: 'play',
-      end: 5,
-      align: 'top-left',
-      showBackground: true
-    }]
-  });
-  player.ready(function() {
-    this.playlist(vPlaylist);
-    this.playlist.autoadvance(1); // Autoplay next video (0-second lead)
-    this.playlist.repeat(true);   // Allow skipping back to first video
-    this.play();
-  });
-
-  // Get playback rate, since it doesn't persist from video to video
-  player.on('beforeplaylistitem', function() {
-    rate = this.playbackRate(); 
-  });
-  
-  // Set playback rate
-  player.on('playlistitem', function() {
-    var currentNumber = document.getElementById('playlist-current-number');
-    currentNumber.innerText = this.playlist.currentItem() + 1;
-
-    this.playbackRate(rate); });
-
-  var buttonComponent = videojs.getComponent('Button');
-  
-  var prevButton = videojs.extend(buttonComponent, {    
-    constructor: function() {
-      buttonComponent.apply(this, arguments);
-      this.addClass('vjs-icon-previous-item');
-      this.controlText('Previous');
-    },
-    handleClick: function(e) {
-      player.playlist.previous();
+    /*
+    shakaInstance.configure({
+      drm: {
+        servers: {
+'org.w3.clearkey':'http'
+      }
     }
-  });
+});*/
 
-  var nextButton = videojs.extend(buttonComponent, {    
-    constructor: function() {
-      buttonComponent.apply(this, arguments);
-      this.addClass('vjs-icon-next-item');
-      this.controlText('Next');
-    },
-    handleClick: function(e) {
-      player.playlist.next();
-      // this.controlText('Next (part 3)');
-    }
-  });
+    /*
+    shakaInstance.configure({
+      drm: {
+        servers: {
+          "com.widevine.alpha":
+                  "Your License URI",
+          "com.microsoft.playready": ""
+        },
+        clearKeys: {}
+          
+      }
+    });*/
+    shakaInstance.load(source);
+  } else {
+    console.warn("Browser is not supported!");
+  }
+});
 
-  videojs.registerComponent('prevButton', prevButton);
-  videojs.registerComponent('nextButton', nextButton);
+//BITMOVIN PLAYER
+var config = {
+  key: "c6d7e091-e62e-4bda-819f-99bb13506fba",
+  playback: {
+    muted: false,
+    autoplay: false,
+    preferredTech: [
+      {
+        player: "html5",
+        streaming: "Dash"
+      },
+      {
+        player: "html5",
+        streaming: "hls"
+      },
+      {
+        player: "html5",
+        streaming: "smooth"
+      },
+      {
+        player: "native",
+        streaming: "hls"
+      },
+      {
+        player: "native",
+        streaming: "progressive"
+      }
+    ]
+  },
+  source: {
+    progressive:      "https://donelfantastic.github.io/creativemedia/local/mojiID.m3u8",
+    //dash: "https://dizf8i52j4sep.cloudfront.net/out/v1/148af6c03e6d48b0a725611fae5ed3a7/index.mpd",
+    poster: "https://thumbs.gfycat.com/ComplexAmazingEsok-max-1mb.gif"
+  }
+};
 
-  player.getChild('controlBar').addChild('prevButton', {}, 0);
-  player.getChild('controlBar').addChild('nextButton', {}, 2);
-})(videoPlayer);
+var player = bitmovin.player("my-player");
 
-
-  
-  // var vPlaylist = [
-  // {sources: [{src: 'https://vjs.zencdn.net/v/oceans.mp4', 
-  //             type: types.mp4},
-  //            {src: 'https://vjs.zencdn.net/v/oceans.webm', 
-  //             type: types.webm }]},
-  // {sources: [{src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8', 
-  //             type: types.m3u}]},
-  // {sources: [{src: 'http://d2zihajmogu5jn.cloudfront.net/big-buck-bunny/master.m3u8',
-  //             type: types.m3u}]}];
-
-//   var buttonComponent = videojs.getComponent('Button');
-//   var buttons = ['vprevious','vnext'];
-//   var buttonObj;
-  
-//   for (var i=0; i < buttons.length; i++) {
-//     var button = buttons[i];
-//     buttonObj = videojs.extend(buttonComponent, {    
-//       constructor: function() {
-//         buttonComponent.apply(this, arguments);
-//         this.addClass('icon-' +button);
-//         this.controlText(button);
-//       },
-//       handleClick: function(e) {
-//         switch(button) {
-//           case 'vprevious': player.playlist.previous(); console.log(button); break;
-//           case 'vnext': player.playlist.next(); console.log(button);  break;
-//         }
-//       }
-//     });
-
-//     videojs.registerComponent(button,buttonObj);
-//   }
-//   player.getChild('controlBar').addChild('vprevious', {},0); 
-//   player.getChild('controlBar').addChild('vnext',{},2);
+player.setup(config).then(
+  function (value) {
+    // Success
+    console.log("Successfully created bitmovin player instance");
+  },
+  function (reason) {
+    // Error!
+    console.log("Error while creating bitmovin player instance");
+  }
+);
