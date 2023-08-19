@@ -1,37 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => { 
-  // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
-  const player = new Plyr('#player');
+$(function(){
+  var $refreshButton = $('#refresh');
+  var $results = $('#css_result');
   
-  // Expose
-  window.player = player;
-
-  // Bind event listener
-  function on(selector, type, callback) {
-    document.querySelector(selector).addEventListener(type, callback, false);
+  function refresh(){
+    var css = $('style.cp-pen-styles').text();
+    $results.html(css);
   }
 
-  // Play
-  on('.js-play', 'click', () => { 
-    player.play();
-  });
-
-  // Pause
-  on('.js-pause', 'click', () => { 
-    player.pause();
-  });
-
-  // Stop
-  on('.js-stop', 'click', () => { 
-    player.stop();
-  });
-
-  // Rewind
-  on('.js-rewind', 'click', () => { 
-    player.rewind();
-  });
-
-  // Forward
-  on('.js-forward', 'click', () => { 
-    player.forward();
+  refresh();
+  $refreshButton.click(refresh);  
+  
+  $results.click(function(){
+    $(this).select();
   });
 });
