@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="in">
+<html lang="en" >
 <head>
-				<meta charset="UTF-8">
-				<title>filmovie</title>
-				<link href="../css/ba.css" rel="stylesheet" />
-				<link rel="stylesheet" href="../css/vod.css"></link>
-							
-				</head>
-				
-				<body>	
-								<center>
-												<br>
-												<div id="atas">
-																
-																<p class="judul"><b>  2.Fast.2.Furious.(2003) </b></p>
-																
-                 <!-- gambar -->
-                 
-            <img class="gambar" src="https://www.themoviedb.org/t/p/w220_and_h330_face/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg">
-            
-            <p class="kl1">kilasan singkat</p>
-            
-            <p class="kl2"><b>Ini adalah kesalahan besar ketika mantan petugas polisi Brian O'Conner bekerja sama dengan mantan temannya Roman Pearce untuk mengangkut kiriman uang "kotor" untuk dealer ekspor-impor yang berbasis di Miami, Carter Verone. Tapi orang-orang itu sebenarnya bekerja sama dengan agen rahasia Monica Fuentes untuk menjatuhkan Verone.</b></p>
-                      </div>
-                      <br>
-                      
-        <div id="kosong"></div>
-        
-                <!-- button -->
-                
-       <div class="flm">
-       				
-       <div id="flm1"></div>
-       
-       <div id="flm2"></div>
+  <meta charset="UTF-8">
+  <title>CodePen - Plyr Demo</title>
+  <link rel='stylesheet' href='https://cdn.plyr.io/3.4.6/plyr.css'><link rel="stylesheet" href="style.css">
 
-				<video id="my-video" class="video-js vjs-big-play-centered vjs-theme-sea" controls preload="auto" fluid="true" poster="https://www.themoviedb.org/t/p/w500_and_h282_face/z3ioibdjWZOYeXjoiabFOFOfPI3.jpg" data-setup='{}' > </video>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+                <!-- Video files -->
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
 
-					</center>
-<script src="../js/ba.js"> </script>
-<script> var player = videojs('my-video'); player.src({ src: 'https://dl.dropbox.com/s/rv2xnemzogzsvfx/2.Fast.2.Furious.%282003%29.mp4' }); </script>
-				
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                    default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+            </video>
+  
+  <div class="actions">
+    <button type="button" class="btn js-play">Play</button>
+    <button type="button" class="btn js-pause">Pause</button>
+    <button type="button" class="btn js-stop">Stop</button>
+    <button type="button" class="btn js-rewind">Rewind</button>
+    <button type="button" class="btn js-forward">Forward</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.plyr.io/3.4.6/plyr.js'></script><script  src="script.js"></script>
+
 </body>
 </html>
