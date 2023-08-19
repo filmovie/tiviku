@@ -2,39 +2,19 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Custom Controls with Plyr.io Video Player</title>
-  <link rel='stylesheet' href='https://cdn.plyr.io/3.5.6/plyr.css'>
+  <title>CodePen - VideoJs controlBar demo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video-js.css'><link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<video 
-       controls
-            crossorigin
-            playsinline
-            data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="js-player">
-  <!-- Video files -->
-            <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
-              type="video/mp4"
-              size="576"
-            />
-            <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-              type="video/mp4"
-              size="720"
-            />
-            <source
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-              type="video/mp4"
-              size="1080"
-            />
-
-    
-
-</video>
+<div>
+  <video id="censor-player" src='https://video.e-droid.net/files_busc/v2189420_2482073551.mp4'></video>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.12.2/videojs-contrib-hls.min.js"></script>
 <!-- partial -->
-  <script src='https://cdn.plyr.io/3.5.6/plyr.js'></script><script  src="script.js"></script>
+  <script  src="script.js"></script>
 
 </body>
 </html>

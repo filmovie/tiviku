@@ -1,30 +1,135 @@
-document.addEventListener('DOMContentLoaded', () => {
-        // Controls (as seen below) works in such a way that as soon as you explicitly define (add) one control
-        // to the settings, ALL default controls are removed and you have to add them back in by defining those below.
+var Player = (function(window, videojs) {
+  var rotateBtn = videojs.extend(videojs.getComponent("Button"), {
+    constructor: function(player) {
+      videojs.getComponent("Button").apply(this, arguments);
+      this.controlText("Rotate");
+      this.rotate = 0;
+      this.player = player;
+    },
+    handleClick: function() {
+      this.removeClass("rotate-" + this.rotate);
+      this.rotate += 90;
+      zoom = this.rotate % 180 === 0 ? 1 : 0.5;
+      this.rotate = this.rotate % 360 || 0;
+      this.player.zoomrotate({ rotate: this.rotate, zoom: zoom });
+      this.addClass("rotate-" + this.rotate);
+    },
+    buildCSSClass: function() {
+      return "rotate-0 vjs-control vjs-button";
+    }
+  });
+  var zoomrotatePlugin = function(settings) {
+    var defaults, extend;
+    defaults = {
+      zoom: 1,
+      rotate: 0
+    };
+    extend = function() {
+      var args, target, i, object, property;
+      args = Array.prototype.slice.call(arguments);
+      target = args.shift() || {};
+      for (i in args) {
+        object = args[i];
+        for (property in object) {
+          if (object.hasOwnProperty(property)) {
+            if (typeof object[property] === "object") {
+              target[property] = extend(target[property], object[property]);
+            } else {
+              target[property] = object[property];
+            }
+          }
+        }
+      }
+      return target;
+    };
 
-        // For example, let's say you just simply wanted to add 'restart' to the control bar in addition to the default.
-        // Once you specify *just* the 'restart' property below, ALL of the controls (progress bar, play, speed, etc) will be removed,
-        // meaning that you MUST specify 'play', 'progress', 'speed' and the other default controls to see them again.
+    var options, player, video, poster;
+    options = extend(defaults, settings);
 
-        const controls = [
-            'play-large', // The large play button in the center
-            'restart', // Restart playback
-            'rewind', // Rewind by the seek time (default 10 seconds)
-            'play', // Play/pause playback
-            'fast-forward', // Fast forward by the seek time (default 10 seconds)
-            'progress', // The progress bar and scrubber for playback and buffering
-            'current-time', // The current time of playback
-            'duration', // The full duration of the media
-            'mute', // Toggle mute
-            'volume', // Volume control
-            'captions', // Toggle captions
-            'settings', // Settings menu
-            'pip', // Picture-in-picture (currently Safari only)
-            'airplay', // Airplay (currently Safari only)
-            'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
-            'fullscreen' // Toggle fullscreen
-        ];
+    player = this.el();
+    video = this.el().getElementsByTagName("video")[0];
+    poster = this.el().getElementsByTagName("div")[1];
+    
+    var properties = [
+        "transform",
+        "WebkitTransform",
+        "MozTransform",
+        "msTransform",
+        "OTransform"
+      ],
+      prop = properties[0];
 
-        const player = Plyr.setup('.js-player', { controls });
+    var i, j;
+    
+    for (i = 0, j = properties.length; i < j; i++) {
+      if (typeof player.style[properties[i]] !== "undefined") {
+        prop = properties[i];
+        break;
+      }
+    }
 
+    player.style.overflow = "hidden";
+    video.style[prop] =
+      "scale(" + options.zoom + ") rotate(" + options.rotate + "deg)";
+    poster.style[prop] =
+      "scale(" + options.zoom + ") rotate(" + options.rotate + "deg)";
+    if (options.debug) console.log("zoomrotate: Register end");
+  };
+  var createPlayer = function() {
+    var vid = document.querySelector("#censor-player");
+    vid.className = "video-js vjs-default-skin vjs-big-play-centered";
+    var player = videojs(vid, {
+      controls: true,
+      playbackRates: [1, 1.2, 1.5, 1.8, 2],
+      controlBar: {
+        audioTrackButton: false,
+        subsCapsButton: false
+      }
     });
+    player.src({
+      src: vid.src,
+      type: vid.type || "application/x-mpegURL"
+    });
+    player.width(vid.style.width || 450);
+    player.height(vid.style.height || 300);
+    player.getChild("controlBar").addChild("rotateButton", {});
+    var seekBar = player.controlBar.progressControl.seekBar;
+    window.addEventListener(
+      "keydown",
+      function(event) {
+        switch (event.keyCode) {
+          case 32: //Space
+            if (player.paused()) {
+              player.play();
+            } else {
+              player.pause();
+            }
+            break;
+          case 39: //ArrowRight
+            var cur = player.currentTime();
+            player.currentTime(cur + 5);
+            break;
+          case 37: //ArrowLeft
+            var cur = player.currentTime();
+            player.currentTime(cur - 5);
+            break;
+        }
+      },
+      false
+    );
+    window.onkeydown = function(e) { 
+      return !(e.keyCode == 32);
+    };
+  };
+  var init = function() {
+    videojs.registerComponent("RotateButton", rotateBtn);
+    videojs.registerPlugin("zoomrotate", zoomrotatePlugin);
+    createPlayer();
+  };
+
+  return {
+    init: init
+  };
+})(window, videojs);
+
+Player.init();
