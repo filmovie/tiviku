@@ -1,15 +1,11 @@
-.rotate-0 :before{
-  content: 'R';
-}
+/* #player { width: 100vh !important; height: auto; }  */
 
-.rotate-90 :before{
-  content: '90°';
-}
+.vjs-icon-previous-item:before, .vjs-icon-next-item:before { font-size: 2em; }
 
-.rotate-180 :before{
-  content: '180°';
-}
+/* Show [current time] / [total time] */
+.video-js .vjs-time-control   { display: block; } 
 
-.rotate-270 :before{
-  content: '270°';
-}
+/* Hide negative, remaining time */
+.video-js .vjs-remaining-time { display: none; }  
+
+/* Other control chars: ‹‹ ❘◀️⏪⏩▶️❘ ›› ▶ */
