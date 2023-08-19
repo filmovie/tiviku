@@ -2,55 +2,17 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - HTML5Demo</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.css//'><link rel="stylesheet" href="style.css">
+  <title>CodePen - videojs skin</title>
+  <link rel='stylesheet' href='video-js.minjjj.css'><link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.12/plyr.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.12/plyr.min.js"></script>
-
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
-  <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-
-</head>
-<h1>Media Player Demo</h1><tr/>
-<p>HTML5 Plyr Player</p>
-<div class="container">
-
-  <!--Plyr player -->
-  <video id="myPlayer" playsinline controls data-poster="https://thumbs.gfycat.com/ComplexAmazingEsok-max-1mb.gif">
-    <source src="https://donelfantastic.github.io/creativemedia/local/mojiID.m3u8" type="application/x-mpegurl">
-  </video>
-</div>
-<br>
-
-<!--Plyr+Shaka player-->
-<p>HTML5 Plyr + Shaka Player</p>
-<div class="video-section ">
- <video id="Pplayer" controls playsinline poster="https://thumbs.gfycat.com/ComplexAmazingEsok-max-1mb.gif"></video>
-</div>
-<br>
-<!--Videojs player -->
-<p>HTML5 Videojs Player</p>
-<div class="video-section video-responsive">
-  <video id="vjs-player" class="video-js" controls preload="none" poster="https://thumbs.gfycat.com/ComplexAmazingEsok-max-1mb.gif" data-setup="{}">
-<source src="https://donelfantastic.github.io/creativemedia/local/mojiID.m3u8" type="application/vnd.apple.mpegurl">
-  </video>
-</div>
-<p>HTML5 Bitmovin Player</p>
-<div class="video-section">
-<div id="my-player"></div></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.4.0/shaka-player.compiled.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mux.js/6.3.0/mux.min.js">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.3.0/video.min.js"></script>
-
-<script type="text/javascript" src="https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7.4/bitmovinplayer.js"></script>
+<div id='test'>
+<video id="myvideo" class="video-js vjs-fluid" controls preload="auto" width="720" height="405" data-setup='{}'>
+                    <source src="https://video.e-droid.net/files_busc/v2190215_2482073551.mp4" type="video/mp4">
+  </video></div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js//'></script>
-<script src='https://cdn.jsdelivr.net/npm/plyr@3//'></script><script  src="script.js"></script>
-
+  <script src='script.js'></script>
 </body>
 </html>
