@@ -1,21 +1,3 @@
-ppp.video-js *:not(.vjs-visible-text) > .vjs-control-text {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.vjs-menu {
-  display: none;
-}
-.vjs-load-progress {
-  display: none;
-}
-.vjs-playback-rate-value {
-  display: none;
-}
 .video-js {
   box-sizing: border-box;
   color: #fff;
@@ -148,7 +130,7 @@ ppp.video-js *:not(.vjs-visible-text) > .vjs-control-text {
 
 
 
-.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+.vjs-error .vjs-error-display {
   font-size: 1.4em;
   text-align: center;
 }
