@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>filmovie</title>
+				
+				<link rel="stylesheet" href="../css/vod.css"></link>
+							
+				</head>
+				
+				<body>	
+								<center>
+												<br>
+												<div id="atas">
+																
+																<p class="judul"><b> boruto.naruto.the.movie.(2015).dubbing </b></p>
+																
+                 <!-- gambar -->
+                 
+            <img class="gambar" src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg">
+            
+            <p class="kl1">kilasan singkat</p>
+            
+            <p class="kl2"><b>Boruto Uzumaki yang penuh semangat, putra Hokage Ketujuh Naruto, adalah seorang ninja terampil yang memiliki sifat kurang ajar dan semangat yang sama seperti yang dimiliki ayahnya. Namun, ketidakhadiran ayahnya yang terus-menerus, yang sibuk dengan tugas Hokage, meredam semangat Boruto. Dia akhirnya bertemu teman ayahnya, Sasuke, dan meminta untuk menjadi... muridnya!? Tirai kisah generasi baru telah terbit!</b></p>
+                      </div>
+                      <br>
+                      
+        <div id="kosong"></div>
+        
+                <!-- button -->
+                
+       <div class="flm">
+       				
+       <div id="flm1"></div>
+       
+       <div id="flm2"></div>
+       
+											 <!-- video -->
+		<div class="vdo">
+				<video controls autoplay preload="auto" controlslist="nofullscreen nodownload" class="video" id="myvideo" poster="https://www.themoviedb.org/t/p/w500_and_h282_face/8kQtBcax6zqiwFhDRS2mmPvLf8.jpg" src="https://video.e-droid.net/files_busc/v2202661_2493940423.mp4"></video>
+				
+			</div>
+				</div>
+  <div id="cntrl"></div>
+  
+  <div id="bawah"></div>
+  
+  <div id="bawah1"></div>
+						
+					<script src="../js/vod.js"></script>
+					
+					</center>
+</body>
+<script>var myvid = document.getElementById('myvideo');
+var myvids = ["https://video.e-droid.net/files_busc/v2202661_2493940423.mp4","https://video.e-droid.net/files_busc/v2202662_2493940423.mp4","https://video.e-droid.net/files_busc/v2202663_2493940423.mp4","https://video.e-droid.net/files_busc/v2202668_2493940423.mp4","end"];
+var activeVideo = 0;
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+</html>
