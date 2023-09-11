@@ -1,9 +1,6 @@
 body {
 				background-color: black;
 }
-#bawah {
-				display: none;
-}
 .judul {
 				font-size: 30px;
 				color: gold;
@@ -11,6 +8,14 @@ body {
 .kl1 {
 				color: white;
 				font-size: 30px;
+}
+#bawah {
+				position: relative;
+				bottom: 400px;
+}
+#bawah1{
+				position: relative;
+				bottom: 400px;
 }
 .kl2 {
 				width: 80%;
@@ -43,7 +48,7 @@ body {
 }
 #clock .time {
   letter-spacing: 0.05em;
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px 0;
 }
 #clock .date {
@@ -66,7 +71,6 @@ body {
 				border-radius: 8px ;
 				width: 100px; height: 34px;
 }
-
 video {
 				width: 100%;
 				height: auto;
@@ -83,7 +87,7 @@ button {
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
-				font-size: 20px;
+				font-size: 16px;
 				margin: 100px;
 }
 .controls > * {
