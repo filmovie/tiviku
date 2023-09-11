@@ -9,14 +9,6 @@ body {
 				color: white;
 				font-size: 30px;
 }
-#bawah {
-				position: relative;
-				bottom: 600px;
-}
-#bawah1{
-				position: relative;
-				bottom: 600px;
-}
 .kl2 {
 				width: 80%;
 				height: auto;
@@ -25,7 +17,7 @@ body {
 }
 #div1 {
 				position: relative;
-				bottom: 12px;
+				bottom: 14px;
 }
 .time {
 				margin: 0;
@@ -47,9 +39,9 @@ body {
 				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
 }
 #clock .time {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   font-size: 13px;
-  padding: 5px 0;
+  padding: 2px 0;
 }
 #clock .date {
   letter-spacing: 0.1em;
@@ -87,7 +79,7 @@ button {
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
-				font-size: 12px;
+				font-size: 10px;
 				margin: 100px;
 }
 .controls > * {
