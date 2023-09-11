@@ -48,12 +48,12 @@ body {
 }
 #clock .time {
   letter-spacing: 0.05em;
-  font-size: 16px;
+  font-size: 13px;
   padding: 5px 0;
 }
 #clock .date {
   letter-spacing: 0.1em;
-  font-size: 16px;
+  font-size: 13px;
 }
 #marquee1 {
 				text-shadow: 2px 2px 2px red;
