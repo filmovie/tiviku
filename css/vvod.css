@@ -79,7 +79,7 @@ button {
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
-				font-size: 11px;
+				font-size: 10px;
 }
 .controls > * {
 				flex: 1;
