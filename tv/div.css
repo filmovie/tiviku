@@ -61,15 +61,13 @@ video {
 .controls {
 				text-align: center;
 				position: relative;
-				top: 405px;
+				top: 415px;
 				background-color: transparent;
 				height: 0px;
 }
 button {
-				position: relative;
-				border: 8px transparent solid;
-				
+				border: 1px transparent solid;	
 				color: red;
 				background-color: transparent;
-				font-size: 10px;
+				font-size: 8px;
 }
