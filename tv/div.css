@@ -13,7 +13,7 @@ video {
 }
 #gambar1 {
 				position: relative;
-				left: 10px;
+				left: 15px;
 				bottom: 10px;
 				border-radius: 8px ;
 				width: 100px;
@@ -22,7 +22,7 @@ video {
 #div1 {
 				position: absolute;
 				top: 0px;
-				bottom: 452px;
+				bottom: 515px;
 				right: 0px;
 				left: 0px;
 				margin: auto;
@@ -61,7 +61,7 @@ video {
 .controls {
 				text-align: center;
 				position: relative;
-				top: 415px;
+				top: 473px;
 				background-color: transparent;
 				height: 0px;
 }
