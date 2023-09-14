@@ -22,7 +22,7 @@ video {
 #div1 {
 				position: absolute;
 				top: 0px;
-				bottom: 455px;
+				bottom: 452px;
 				right: 0px;
 				left: 0px;
 				margin: auto;
@@ -61,18 +61,15 @@ video {
 .controls {
 				text-align: center;
 				position: relative;
-				top: 308px;
-				
+				top: 405px;
 				background-color: transparent;
 				height: 0px;
 }
 button {
 				position: relative;
-				
 				border: 8px transparent solid;
-				border-radius: 13px ;
+				
 				color: red;
 				background-color: transparent;
 				font-size: 10px;
-				margin: 100px;
 }
