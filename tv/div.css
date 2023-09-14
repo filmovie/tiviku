@@ -11,6 +11,14 @@ video {
 				width: 100%;
 				height: auto;
 }
+#gambar1 {
+				position: relative;
+				left: 10px;
+				bottom: 10px;
+				border-radius: 8px ;
+				width: 100px;
+				height: 34px;
+}
 #div1 {
 				position: absolute;
 				top: 0px;
@@ -53,14 +61,14 @@ video {
 .controls {
 				text-align: center;
 				position: relative;
-				top: 450px;
-				bottom: 0px;
+				top: 308px;
+				
 				background-color: transparent;
 				height: 0px;
 }
 button {
 				position: relative;
-				bottom: 98px;
+				
 				border: 8px transparent solid;
 				border-radius: 13px ;
 				color: red;
