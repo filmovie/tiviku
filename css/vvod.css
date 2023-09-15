@@ -59,7 +59,7 @@ body {
 #gambar1 {
 				position: relative;
 				top: 44px;
-				right:  430px; 35px;
+				right:  426px; 35px;
 				border-radius: 8px ;
 				width: 100px; height: 34px;
 }
@@ -74,7 +74,7 @@ video {
 }
 button {
 				position: relative;
-				bottom: 0px;
+				bottom: 3px;
 				border: 8px transparent solid;
 				border-radius: 13px ;
 				color: red;
@@ -87,13 +87,14 @@ button {
 .progress {
 				flex: 10;
 				position: relative;
+				bottom: 4px;
 				display: flex;
 				flex-basis: 100%;
 				height: 5px;
 				/* background: rgba(0,0,0,0.5); */
 				background: rgba(255,255,255,0.5);
 				cursor: pointer;
-				height: 7px;
+				height: 2px;
 }
 .progress__filled {
 				width: 50%;
