@@ -1,0 +1,67 @@
+</<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>tiviku</title>
+				
+				<link rel="stylesheet" href="../css/vvod.css"></link>
+							
+				</head>
+				
+				<body>	
+								<center>
+												<br>
+												<div id="atas">
+																
+																<p class="judul"><b> Mr.Yin-Yang.(Mr.Ghost).(2023) </b></p>
+																
+                 <!-- gambar -->
+                 
+            <img class="gambar" src=" https://www.themoviedb.org/t/p/w188_and_h282_bestv2/3pQnfE2qhTMsNxaJpi1WUegj7g6.jpg ">
+            
+            <p class="kl1">kilasan singkat</p>
+            
+            <p class="kl2"><b>Di dunia, pernah hiduplah seseorang bernama Yan Bufan, yang bersembunyi di kota yang ramai dan membantu orang-orang yang menderita, mendapatkan cinta dan kekaguman mereka. Dikabarkan bahwa dia unggul dalam pengetahuan tentang fenomena langit dan geografi, memiliki kemampuan untuk mengusir kejahatan dan menangkap hal-hal gaib, dan dapat melihat apa yang tidak dapat dilihat oleh orang biasa. Dia ikut campur dalam masalah yang tidak adil dan dikenal sebagai “Tuan Yin dan Yang”. Yan Bufan diundang ke kediaman keluarga Lin untuk menyelesaikan masalah yang sulit. Begitu dia masuk, dia menemukan sederet “jejak kaki hantu” di tanah, memanjang ke depan. Dengan diperkenalkannya pengurus keluarga Lin, Yan Bufan mengikuti jejak kaki tersebut dan mulai menyelesaikan “masalah hantu” di kediaman Lin.</b></p>
+                      </div>
+                      <br>
+                      
+        <div id="kosong"></div>
+        
+                <!-- button -->
+                
+       <div class="flm">
+       				
+       <div id="flm1"></div>
+       
+       <div id="flm2"></div>
+       
+											 <!-- video -->
+		<div id="vdo">
+		</div>
+				</div>
+  <div id="cntrl"></div>
+					<br>
+					<br>
+					<br>
+					</center>
+</body>
+<script src="../js/vvod.js"></script>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = ["../iklan1.mp4"," https://video.e-droid.net/files_busc/v2210568_2507542483.mp4 "," https://video.e-droid.net/files_busc/v2210570_2507542483.mp4 "," https://video.e-droid.net/files_busc/v2210571_2507542483.mp4 "," https://video.e-droid.net/files_busc/v2210573_2507542483.mp4 "," https://video.e-droid.net/files_busc/v2210575_2507542483.mp4 "," https://video.e-droid.net/files_busc/v2210576_2507542483.mp4 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://www.themoviedb.org/t/p/w500_and_h282_face/8bvjvm6ky1mkj1TCcmHjVCTXIu3.jpg ';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+
+
+</html>
