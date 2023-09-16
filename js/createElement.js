@@ -6,6 +6,10 @@ document.body.appendChild(scrollmenu);
 /*
 
 */
+let a206 = document.createElement('span');
+a206.innerHTML = "<a class='film' href=' vod/Mr.Yin-Yang.(Mr.Ghost).(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/3pQnfE2qhTMsNxaJpi1WUegj7g6.jpg ' alt=' Mr.Yin-Yang.(Mr.Ghost).(2023) '></button></a>";
+scrollmenu.appendChild(a206);
+
 let a205 = document.createElement('span');
 a205.innerHTML = "<a class='film' href=' vod/The.Super.Mario.Bros..Movie.(2023).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/iXD2VjzyXmOGJrR0Kt46IUpH3DE.jpg ' alt=' The.Super.Mario.Bros..Movie.(2023).dubbing '></button></a>";
 scrollmenu.appendChild(a205);
