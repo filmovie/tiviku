@@ -1,6 +1,7 @@
 body {
 				background-color: black;
 }
+video::-webkit-media-controls-panel { display: none !important; opacity: 1 !important;}
 .judul {
 				font-size: 30px;
 				color: gold;
