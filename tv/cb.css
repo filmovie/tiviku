@@ -1,0 +1,71 @@
+body {
+				display: flex;
+				background-color: black;
+				flex-direction: column;
+				min-height: 100vh;
+				align-items: center;
+				justify-content: center;
+}
+video::-webkit-media-controls-panel {
+				display: none !important;
+				opacity: 1 !important;
+}
+video {
+				width: 100%;
+				height: auto;
+				position: relative;
+				bottom: 40px;
+}
+.controls {
+				text-align: center;
+				position: relative;
+				bottom: 60px;
+				background-color: transparent;
+				height: 0px;
+}
+button {
+				border: 1px transparent solid;	
+				color: red;
+				background-color: transparent;
+				font-size: 8px;
+				height: 0px;
+}
+#gambar1 {
+				position: relative;
+				right: 560px;
+				top: 4px;
+				border-radius: 8px ;
+				width: 100px;
+				height: 34px;
+				z-index: 2;
+}
+.time {
+				margin: 0;
+				padding: 0;
+}
+.date {
+				margin: 0;
+				padding: 0;
+}
+#clock {
+				font-family: "Share Tech Mono", monospace;
+				color: #ffffff;
+				text-align: center;
+				position: relative;
+				left: 62px;
+				top: 47px; 
+				transform: translate(-50%, -50%);
+				color: #daf6ff;
+				background-color: transparent;
+				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+				z-index: 1;
+}
+#clock .time {
+  letter-spacing: 0.01em;
+  font-size: 13px;
+  padding: 2px 0;
+}
+#clock .date {
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
