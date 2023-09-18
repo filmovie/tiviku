@@ -8,18 +8,18 @@ body {
 }
 video::-webkit-media-controls-panel {
 				position: relative;
-				top: 5px;
+				top: 8px;
 }
 video {
 				width: 100%;
 				height: auto;
 				position: relative;
-				bottom: 32px;
+				bottom: 30px;
 }
 .controls {
 				text-align: center;
 				position: relative;
-				bottom: 52px;
+				bottom: 50px;
 				background-color: transparent;
 				height: 0px;
 }
@@ -33,7 +33,7 @@ button {
 #gambar1 {
 				position: relative;
 				right: 423px;
-				top: 8px;
+				top: 10px;
 				border-radius: 8px ;
 				width: 100px;
 				height: 34px;
@@ -52,8 +52,8 @@ button {
 				color: #ffffff;
 				text-align: center;
 				position: relative;
-				left: 61px;
-				top: 58px; 
+				left: 63px;
+				top: 62px; 
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				background-color: transparent;
