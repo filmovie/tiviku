@@ -2,7 +2,7 @@ body {
 				display: flex;
 				background-color: black;
 				flex-direction: column;
-				min-height: 100vh;
+				min-height: 90vh;
 				align-items: center;
 				justify-content: center;
 }
@@ -13,13 +13,11 @@ video::-webkit-media-controls-panel {
 video {
 				width: 100%;
 				height: auto;
-				position: relative;
-				bottom: 40px;
 }
 .controls {
 				text-align: center;
 				position: relative;
-				bottom: 60px;
+				bottom: 20px;
 				background-color: transparent;
 				height: 0px;
 }
@@ -32,8 +30,8 @@ button {
 }
 #gambar1 {
 				position: relative;
-				right: 560px;
-				top: 4px;
+				right: 421px;
+				top:43px;
 				border-radius: 8px ;
 				width: 100px;
 				height: 34px;
@@ -52,8 +50,8 @@ button {
 				color: #ffffff;
 				text-align: center;
 				position: relative;
-				left: 62px;
-				top: 47px; 
+				left: 61px;
+				top: 90px; 
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				background-color: transparent;
