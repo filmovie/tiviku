@@ -7,17 +7,19 @@ body {
 				justify-content: center;
 }
 video::-webkit-media-controls-panel {
-				display: none !important;
-				opacity: 1 !important;
+				position: relative;
+				top: 5px;
 }
 video {
 				width: 100%;
 				height: auto;
+				position: relative;
+				bottom: 32px;
 }
 .controls {
 				text-align: center;
 				position: relative;
-				bottom: 20px;
+				bottom: 52px;
 				background-color: transparent;
 				height: 0px;
 }
@@ -30,8 +32,8 @@ button {
 }
 #gambar1 {
 				position: relative;
-				right: 421px;
-				top:43px;
+				right: 423px;
+				top: 8px;
 				border-radius: 8px ;
 				width: 100px;
 				height: 34px;
@@ -51,7 +53,7 @@ button {
 				text-align: center;
 				position: relative;
 				left: 61px;
-				top: 90px; 
+				top: 58px; 
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				background-color: transparent;
