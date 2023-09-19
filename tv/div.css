@@ -40,7 +40,7 @@ img {
 				position: relative;
 				z-index: 2;
 				left: 50%;
-				top: 47px;
+				top: 50px;
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
@@ -56,8 +56,8 @@ img {
 }
 button {
 				position: relative;
-				bottom: 40px;
-				left: 418px;
+				bottom: 45px;
+				left: 415px;
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
