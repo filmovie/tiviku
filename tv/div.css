@@ -6,7 +6,7 @@ video {
 				width: 100%;
 				height: auto;
 				position: relative;
-				bottom: 10px;
+				bottom: 15px;
 }
 #ggg {
 				position: absolute;
@@ -18,8 +18,8 @@ video {
 				}
 img {
 				position: relative;
-				top: 80px;
-				left: 17px;
+				top: 77px;
+				left: 15px;
 				border-radius: 8px ;
 				width: 110px;
 				height: 35px;
@@ -40,7 +40,7 @@ img {
 				position: relative;
 				z-index: 2;
 				left: 50%;
-				top: 53px;
+				top: 48px;
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
@@ -56,8 +56,8 @@ img {
 }
 button {
 				position: relative;
-				bottom: 47px;
-				left: 410px;
+				bottom: 53px;
+				left: 400px;
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
