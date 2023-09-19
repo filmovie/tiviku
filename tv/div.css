@@ -18,7 +18,7 @@ video {
 				}
 img {
 				position: relative;
-				top: 70px;
+				top: 80px;
 				left: 17px;
 				border-radius: 8px ;
 				width: 110px;
@@ -40,7 +40,7 @@ img {
 				position: relative;
 				z-index: 2;
 				left: 50%;
-				top: 50px;
+				top: 53px;
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
@@ -56,8 +56,8 @@ img {
 }
 button {
 				position: relative;
-				bottom: 45px;
-				left: 415px;
+				bottom: 47px;
+				left: 410px;
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
