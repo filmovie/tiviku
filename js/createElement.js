@@ -51,7 +51,7 @@ a196.innerHTML = "<a class='film' href=' vod/Drifting.Home.(2022).dubbing.html '
 scrollmenu.appendChild(a196);
 
 let a195 = document.createElement('span');
-a195.innerHTML = "<a class='film' href=' tv/cb.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/jBtQMSlHq5SCwtGcSfwVBA2xwLr.jpg ' alt=' jaka.sembung.(1981).barry.prima '></button></a>";
+a195.innerHTML = "<a class='film' href=' tv/div.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/jBtQMSlHq5SCwtGcSfwVBA2xwLr.jpg ' alt=' jaka.sembung.(1981).barry.prima '></button></a>";
 scrollmenu.appendChild(a195);
 
 let a194 = document.createElement('span');
