@@ -6,7 +6,7 @@ video {
 				width: 100%;
 				height: auto;
 				position: relative;
-				bottom: 15px;
+				bottom: 17px;
 }
 #ggg {
 				position: absolute;
@@ -19,7 +19,7 @@ video {
 img {
 				position: relative;
 				top: 77px;
-				left: 15px;
+				left: 12px;
 				border-radius: 8px ;
 				width: 110px;
 				height: 35px;
@@ -56,7 +56,7 @@ img {
 }
 button {
 				position: relative;
-				bottom: 53px;
+				bottom: 56px;
 				left: 400px;
 				border-radius: 13px ;
 				color: red;
