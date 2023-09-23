@@ -32,5 +32,5 @@ a7.innerHTML = "<a class='film' href=' vod/7.one.piece.(2023).dubbing.html '><bu
 scrollmenu.appendChild(a7);
 
 let a8 = document.createElement('span');
-a8.innerHTML = "<a class='film' href=' tv/div.html '><button><img class='gfilm' src=' gambar/0ne8.jpg ' alt=' eps.8 '></button></a>";
+a8.innerHTML = "<a class='film' href=' vod/8.one.piece.(2023).dubbing.html '><button><img class='gfilm' src=' gambar/0ne8.jpg ' alt=' eps.8 '></button></a>";
 scrollmenu.appendChild(a8);
