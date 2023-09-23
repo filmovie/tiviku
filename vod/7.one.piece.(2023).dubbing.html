@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>tiviku</title>
+				
+				<link rel="stylesheet" href="../css/vvod.css"></link>
+							
+				</head>
+				
+				<body>	
+								<center>
+												<br>
+												<div id="atas">
+																
+																<p class="judul"><b> 7.one.piece.(2023).dubbing  </b></p>
+																
+                 <!-- gambar -->
+                 
+            <img class="gambar" src=" ../gambar/0ne7.jpg ">
+            
+            <p class="kl1">kilasan singkat</p>
+            
+            <p class="kl2"><b>Dengan topi jerami dan krunya, bajak laut muda Monkey D. Luffy melakukan perjalanan epik mencari harta karun dalam adaptasi live-action dari manga populer ini.</b></p>
+                      </div>
+                      <br>
+                      
+        <div id="kosong"></div>
+        
+                <!-- button -->
+                
+       <div class="flm">
+       				
+       <div id="flm1"></div>
+       
+       <div id="flm2"></div>
+       
+											 <!-- video -->
+		<div id="vdo">
+		</div>
+				</div>
+  <div id="cntrl"></div>
+					<br>
+					<br>
+					<br>
+					</center>
+</body>
+<script src="../js/vvod.js"></script>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = ["../iklan1.mp4"," https://video.e-droid.net/files_busc/v2213133_2511308104.mp4 "," https://video.e-droid.net/files_busc/v2213134_2511308104.mp4 "," https://video.e-droid.net/files_busc/v2213135_2511308104.mp4 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://www.themoviedb.org/t/p/w500_and_h282_face/bXhzP2I6K7I3LxXyhbCTeh8q6vJ.jpg';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+
+
+</html>
