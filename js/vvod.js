@@ -12,7 +12,7 @@ marquee.innerHTML = "<!--<b>Mohon bergabung di grup agar selalu terhubung dengan
 document.getElementById('flm1').appendChild(marquee);
 
 let vdo1 = document.createElement('div');
-vdo1.innerHTML = "<video controls preload='auto' controlslist='nofullscreen nodownload' class='video' id='myvideo' src='../iklan1.mp4'></video>";
+vdo1.innerHTML = "<video controls preload='auto' controlslist='nodownload' class='video' id='myvideo' src='../iklan1.mp4'></video>";
 document.getElementById('vdo').appendChild(vdo1);
 
 let div1 = document.createElement('div');
