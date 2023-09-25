@@ -6,6 +6,14 @@ document.body.appendChild(scrollmenu);
 /*
 
 */
+let a208 = document.createElement('span');
+a208.innerHTML = "<a class='film' href=' vod/The.Adventures.of.Tintin.(2011).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/mKYkNro2btaWMsnYSuyqrBdHQo3.jpg ' alt=' The.Adventures.of.Tintin.(2011).dubbing '></button></a>";
+scrollmenu.appendChild(a208);
+
+let a207 = document.createElement('span');
+a207.innerHTML = "<a class='film' href=' vod/Beauty.and.the.Beast.(1991).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/7oCAPOphDKpIaxTrnukmDrZ8XKD.jpg ' alt=' Beauty.and.the.Beast.(1991).dubbing '></button></a>";
+scrollmenu.appendChild(a207);
+
 let a206 = document.createElement('span');
 a206.innerHTML = "<a class='film' href=' vod/Mr.Yin-Yang.(Mr.Ghost).(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/3pQnfE2qhTMsNxaJpi1WUegj7g6.jpg ' alt=' Mr.Yin-Yang.(Mr.Ghost).(2023) '></button></a>";
 scrollmenu.appendChild(a206);
