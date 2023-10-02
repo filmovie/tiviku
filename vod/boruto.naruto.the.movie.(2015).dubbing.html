@@ -2,9 +2,9 @@
 <html lang="in">
 <head>
 				<meta charset="UTF-8">
-				<title>filmovie</title>
+				<title>tiviku</title>
 				
-				<link rel="stylesheet" href="../css/vod.css"></link>
+				<link rel="stylesheet" href="../css/vvod.css"></link>
 							
 				</head>
 				
@@ -13,11 +13,11 @@
 												<br>
 												<div id="atas">
 																
-																<p class="judul"><b> boruto.naruto.the.movie.(2015).dubbing </b></p>
+																<p class="judul"><b> boruto.naruto.the.movie.(2015).dubbing  </b></p>
 																
                  <!-- gambar -->
                  
-            <img class="gambar" src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg">
+            <img class="gambar" src=" https://www.themoviedb.org/t/p/w188_and_h282_bestv2/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg ">
             
             <p class="kl1">kilasan singkat</p>
             
@@ -36,24 +36,23 @@
        <div id="flm2"></div>
        
 											 <!-- video -->
-		<div class="vdo">
-				<video controls autoplay preload="auto" controlslist="nofullscreen nodownload" class="video" id="myvideo" poster="https://www.themoviedb.org/t/p/w500_and_h282_face/8kQtBcax6zqiwFhDRS2mmPvLf8.jpg" src="https://video.e-droid.net/files_busc/v2202661_2493940423.mp4"></video>
-				
-			</div>
+		<div id="vdo">
+		</div>
 				</div>
   <div id="cntrl"></div>
-  
-  <div id="bawah"></div>
-  
-  <div id="bawah1"></div>
-						
-					<script src="../js/vod.js"></script>
-					
+					<br>
+					<br>
+					<br>
 					</center>
 </body>
-<script>var myvid = document.getElementById('myvideo');
-var myvids = ["https://video.e-droid.net/files_busc/v2202661_2493940423.mp4","https://video.e-droid.net/files_busc/v2202662_2493940423.mp4","https://video.e-droid.net/files_busc/v2202663_2493940423.mp4","https://video.e-droid.net/files_busc/v2202668_2493940423.mp4","end"];
+<script src="../js/vvod.js"></script>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = ["../iklan1.mp4"," https://video.e-droid.net/files_busc/v2202661_2493940423.mp4 "," https://video.e-droid.net/files_busc/v2202662_2493940423.mp4 "," https://video.e-droid.net/files_busc/v2202663_2493940423.mp4 "," https://video.e-droid.net/files_busc/v2202668_2493940423.mp4 "," end " ];
 var activeVideo = 0;
+
+myvid.poster ='https://www.themoviedb.org/t/p/w500_and_h282_face/kU98MbVVgi72wzceyrEbClZmMFe.jpg';
 
 myvid.addEventListener('ended', function(e) {
   // update the new active video index
@@ -63,4 +62,6 @@ myvid.addEventListener('ended', function(e) {
   myvid.src = myvids[activeVideo];
   myvid.play();
 });</script>
+
+
 </html>
