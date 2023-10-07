@@ -2,6 +2,32 @@ let script = document.createElement('script');
 script.src = "../js/vod1.js";
 document.body.appendChild(script);
 
+var ply = document.getElementById("wpo");
+ply.src ='../iklan1.mp4';
+
+var vide = document.getElementById("myvideo");
+var vidy = document.querySelector(".vid1");
+
+var vidd3 = document.querySelector(".vid3")
+
+setTimeout(function(){
+				vide.pause()
+},300000);
+setTimeout(function(){
+				vide.play()
+},307000);
+
+setTimeout(function(){
+				vidy.classList.add("vid3")
+				vidy.play()
+},300000);
+
+setTimeout(function(){
+				vidy.classList.remove("vid3")
+				vidy.pause()
+},307000);
+
+
 const video = document.querySelector(".video");
 const toggleButton = document.querySelector(".toggleButton");
 const progress = document.querySelector(".progress");
