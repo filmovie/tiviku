@@ -20,7 +20,7 @@ body {
 				}
 img {
 				position: relative;
-				top: 77px;
+				top: 76px;
 				left: 12px;
 				border-radius: 8px ;
 				width: 110px;
@@ -42,7 +42,7 @@ img {
 				position: relative;
 				z-index: 2;
 				left: 50%;
-				top: 48px;
+				top: 46px;
 				transform: translate(-50%, -50%);
 				color: #daf6ff;
 				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
