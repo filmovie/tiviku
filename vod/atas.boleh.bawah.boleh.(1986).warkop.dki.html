@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>tiviku</title>
+				
+				<link rel="stylesheet" href="../css/vvod.css"></link>
+							
+				</head>
+				
+				<body>	
+								<center>
+												<br>
+												<div id="atas">
+																
+																<p class="judul"><b> atas.boleh.bawah.boleh.(1986).warkop.dki </b></p>
+																
+                 <!-- gambar -->
+                 
+            <img class="gambar" src=" https://www.themoviedb.org/t/p/w220_and_h330_face/ouVRoKOps7ew5k6MoGo2bgqbtH7.jpg ">
+            
+            <p class="kl1">kilasan singkat</p>
+            
+            <p class="kl2"><b>Dalam komedi ini, Dono, Kasino, dan Indro berburu. Dono pingsan saat berburu dan dirawat oleh kepala suku setempat, yang putrinya, Dono jatuh cinta. Segera setelah itu, dia menemukan karakter gadis itu, dan melarikan diri. Dia mengalami kecelakaan lain dan dirawat di rumah sakit. Kemudian Dono jatuh cinta pada perawatnya, Susy. Namun Indro juga jatuh cinta pada Susy, namun pada akhirnya tidak ada satupun yang bisa memenangkan hatinya.</b></p>
+                      </div>
+                      <br>
+                      
+        <div id="kosong"></div>
+        
+                <!-- button -->
+                
+       <div class="flm">
+       				
+       <div id="flm1"></div>
+       
+       <div id="flm2"></div>
+       
+											 <!-- video -->
+		<div id="vdo">
+		</div>
+				</div>
+  <div id="cntrl"></div>
+					<br>
+					<br>
+					<br>
+					</center>
+</body>
+<script src="../js/vvod.js"></script>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = ["../iklan1.mp4"," https://dl.dropbox.com/scl/fi/l5evxqwmq1x5psaov9zfv/atas-boleh-bawah-boleh.mp4?rlkey=csq345hjyewvy9h1qcd7r94j1&dl=0 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15EKXNlVYw8MQmzymCm4Pp1pCMed3N9HcDw&usqp=CAU';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+
+
+</html>
