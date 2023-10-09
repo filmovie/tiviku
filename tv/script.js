@@ -1,30 +1,30 @@
-let vid1 = 'https://video.e-droid.net/files_busc/v2189355_2482073551.mp4';
-let log1 =
-'https://www.mediafire.com/convkey/4d1a/xrc3k4vz2z33lp84g.jpg';
-let vid2 =
-'https://video.e-droid.net/files_busc/v2196186_2482073551.mp4';
-let log2 = 'https://www.mediafire.com/convkey/4d1a/xrc3k4vz2z33lp84g.jpg';
-let vid3 = 'https://video.e-droid.net/files_busc/v2196189_2482073551.mp4';
-let log3 = 'https://www.mediafire.com/convkey/4d1a/xrc3k4vz2z33lp84g.jpg';
-let vid4 = 'https://video.e-droid.net/files_busc/v2196191_2482073551.mp4';
-let log4 = 'https://www.mediafire.com/convkey/4d1a/xrc3k4vz2z33lp84g.jpg';
+document.addEventListener('DOMContentLoaded', () => {
+        // Controls (as seen below) works in such a way that as soon as you explicitly define (add) one control
+        // to the settings, ALL default controls are removed and you have to add them back in by defining those below.
 
-$('.thumb-1').on('click', function(){
-	$('.vimv').attr('src', vid1);
-	$('.vimv').attr('poster',log1);
-});
+        // For example, let's say you just simply wanted to add 'restart' to the control bar in addition to the default.
+        // Once you specify *just* the 'restart' property below, ALL of the controls (progress bar, play, speed, etc) will be removed,
+        // meaning that you MUST specify 'play', 'progress', 'speed' and the other default controls to see them again.
 
-$('.thumb-2').on('click', function(){
-	$('.vimv').attr('src',vid2);
-	$('.vimv').attr('poster',log2);
-});
+        const controls = [
+            'play-large', // The large play button in the center
+            'restart', // Restart playback
+            'rewind', // Rewind by the seek time (default 10 seconds)
+            'play', // Play/pause playback
+            'fast-forward', // Fast forward by the seek time (default 10 seconds)
+            'progress', // The progress bar and scrubber for playback and buffering
+            'current-time', // The current time of playback
+            'duration', // The full duration of the media
+            'mute', // Toggle mute
+            'volume', // Volume control
+            'captions', // Toggle captions
+            'settings', // Settings menu
+            'pip', // Picture-in-picture (currently Safari only)
+            'airplay', // Airplay (currently Safari only)
+            'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+            'fullscreen' // Toggle fullscreen
+        ];
 
-$('.thumb-3').on('click', function(){
-	$('.vimv').attr('src', vid3);
-$('.vimv').attr('poster', log3);
-});
+        const player = Plyr.setup('.js-player', { controls });
 
-$('.thumb-4').on('click', function(){
-	$('.vimv').attr('src', vid4);
-$('.vimv').attr('poster', log4);
-});
+    });
