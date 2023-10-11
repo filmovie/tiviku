@@ -231,7 +231,7 @@ a154.innerHTML = "<a class='film' href=' vod/2.Fast.2.Furious.(2003).html '><but
 scrollmenu.appendChild(a154);
 
 let a153 = document.createElement('span');
-a153.innerHTML = "<a class='film' href=' vod/Captain.(2022).Telugu.True.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/rUkBlZwIAfg6iAztBrGhExCYqtk.jpg ' alt=' Captain.(2022).Telugu.True '></button></a>";
+a153.innerHTML = "<a class='film' href=' https://sfile.mobi/377WDR7unSH '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/rUkBlZwIAfg6iAztBrGhExCYqtk.jpg ' alt=' Captain.(2022).Telugu.True '></button></a>";
 scrollmenu.appendChild(a153);
 
 let a152 = document.createElement('span');
