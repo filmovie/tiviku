@@ -6,6 +6,10 @@ document.body.appendChild(scrollmenu);
 /*
 
 */
+let br1 = document.createElement('span');
+br1.innerHTML = "<a class='film' href=' vod/Titanic.(1997).html '><button><img class='gfilm' src='https://www.themoviedb.org/t/p/w220_and_h330_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg' alt=' Titanic.(1997) '></button></a>";
+scrollmenu.appendChild(br1);
+
 let a209 = document.createElement('span');
 a209.innerHTML = "<a class='film' href=' vod/atas.boleh.bawah.boleh.(1986).warkop.dki.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ouVRoKOps7ew5k6MoGo2bgqbtH7.jpg ' alt=' atas.boleh.bawah.boleh.(1986).warkop.dki  '></button></a>";
 scrollmenu.appendChild(a209);
@@ -231,7 +235,7 @@ a154.innerHTML = "<a class='film' href=' vod/2.Fast.2.Furious.(2003).html '><but
 scrollmenu.appendChild(a154);
 
 let a153 = document.createElement('span');
-a153.innerHTML = "<a class='film' href=' https://sfile.mobi/377WDR7unSH '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/rUkBlZwIAfg6iAztBrGhExCYqtk.jpg ' alt=' Captain.(2022).Telugu.True '></button></a>";
+a153.innerHTML = "<a class='film' href=' vod/Captain.(2022).Telugu.True.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/rUkBlZwIAfg6iAztBrGhExCYqtk.jpg ' alt=' Captain.(2022).Telugu.True '></button></a>";
 scrollmenu.appendChild(a153);
 
 let a152 = document.createElement('span');
@@ -773,10 +777,6 @@ scrollmenu.appendChild(a19);
 let a18 = document.createElement('span');
 a18.innerHTML = "<a class='film' href=' vod/The.Adventures.of.Tintin.(2011).html '><button><img class='gfilm' src='https://www.themoviedb.org/t/p/w220_and_h330_face/mKYkNro2btaWMsnYSuyqrBdHQo3.jpg' alt=' The.Adventures.of.Tintin.(2011) '></button></a>";
 scrollmenu.appendChild(a18);
-
-let a17 = document.createElement('span');
-a17.innerHTML = "<a class='film' href=' vod/Titanic.(1997).html '><button><img class='gfilm' src='https://www.themoviedb.org/t/p/w220_and_h330_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg' alt=' Titanic.(1997) '></button></a>";
-scrollmenu.appendChild(a17);
 
 let a16 = document.createElement('span');
 a16.innerHTML = "<a class='film' href=' vod/Nightbird.(2023).html '><button><img class='gfilm' src='https://www.themoviedb.org/t/p/w220_and_h330_face/9lmwwQNNlB56IsTM5jpD4Z8rytO.jpg' alt=' Nightbird.(2023) '></button></a>";
