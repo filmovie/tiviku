@@ -5,14 +5,14 @@ document.body.appendChild(script);
 let gambar1 = document.createElement('img');
 gambar1.id = "gambar1";
 gambar1.src = "../tiviku.gif";
-document.getElementById('flm2').appendChild(gambar1);
+document.getElementById('flm2k').appendChild(gambar1);
 let marquee = document.createElement('marquee');
 marquee.id = "marquee1";
 marquee.innerHTML = "<!--<b>Mohon bergabung di grup agar selalu terhubung dengan kami.!!! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; facebook grup. ( https://tinyurl.com/tiviku ) &#128516;</b>-->";
 document.getElementById('flm1').appendChild(marquee);
 
 let vdo1 = document.createElement('div');
-vdo1.innerHTML = "<video controls preload='auto' controlslist='nodownload' class='video' id='myvideo' src='../iklan1.mp4'></video>";
+vdo1.innerHTML = "<video controls preload='auto' controlslist='nofullscreen nodownload' class='video' id='myvideo' src='../iklan1.mp4'></video>";
 document.getElementById('vdo').appendChild(vdo1);
 
 let div1 = document.createElement('div');
