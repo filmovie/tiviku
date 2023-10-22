@@ -6,6 +6,14 @@ document.body.appendChild(scrollmenu);
 /*
 
 */
+let a10 = document.createElement('span');
+a10.innerHTML = "<a class='film' href=' vod/AKA.(2023).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/c0Zv7gNTH8LoRnHANhAHGWhGvJC.jpg ' alt=' AKA.(2023).dubbing '></button></a>";
+scrollmenu.appendChild(a10);
+
+let a9 = document.createElement('span');
+a9.innerHTML = "<a class='film' href=' vod/Big.Brother.(2018).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/z6Y6uQn2fORr7o43EggQrTsp08o.jpg ' alt=' Big.Brother.(2018) '></button></a>";
+scrollmenu.appendChild(a9);
+
 let a8 = document.createElement('span');
 a8.innerHTML = "<a class='film' href=' vod/20th.Century.Boys.3.Redemption.(2009).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/zf5wTUqciMcSEUjPF5E9O8fBNo9.jpg ' alt=' 20th.Century.Boys.3.Redemption.(2009) '></button></a>";
 scrollmenu.appendChild(a8);
