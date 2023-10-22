@@ -2,52 +2,37 @@
 <html lang="in">
 <head>
 				<meta charset="UTF-8">
-				<title>filmovie</title>
+				<title>tiviku</title>
+				<link rel="stylesheet" href="../css/fvod.css"></link>
+</head>
+<body>
+				<div id="ggg">
+								<div class="tiviku"></div>
+								<div id='clock'><p class='date'>{{ date }}</p><p class='time'>{{ time }}</p></div>								
+				<video controls preload='auto' controlslist='nofullscreen nodownload' class='video' id='myvideo' ></video>
 				
-				<link rel="stylesheet" href="../css/vod.css"></link>
+				<div class='controls'> <div class='progress'> <div class='progress__filled'></div> </div> <button class='controls__button' data-skip='-10'><b>« 10s</b></button> <button class='controls__button toggleButton' title='Toggle Play'><b>▶</b></button> <button class='controls__button' data-skip='25'><b>10s »</b></button> </div> </div>
 							
-				</head>
-				
-				<body>	
-								<center>
-												<br>
-												<div id="atas">
-																
-																<p class="judul"><b>  5cm.(2012) </b></p>
-																
-                 <!-- gambar -->
-                 
-            <img class="gambar" src="https://www.themoviedb.org/t/p/w220_and_h330_face/y43O9tj6yo4h1shx58YGBsbjme4.jpg">
-            
-            <p class="kl1">kilasan singkat</p>
-            
-            <p class="kl2"><b>Genta, Arial, Zafran, Riani dan Ian adalah lima remaja yang telah menjalin persahabatan belasan tahun lamanya. Suatu hari mereka berlima merasa “jenuh” dengan persahabatan mereka dan akhirnya kelimanya memutuskan untuk berpisah, tidak saling berkomunikasi satu sama lain selama tiga bulan lamanya.</b></p>
-                      </div>
-                      <br>
-                      
-        <div id="kosong"></div>
-        
-                <!-- button -->
-                
-       <div class="flm">
-       				
-       <div id="flm1"></div>
-       
-       <div id="flm2"></div>
-       
-											 <!-- video -->
-		<div class="vdo">
-				<video class="video" poster="https://www.themoviedb.org/t/p/w500_and_h282_face/u6B4OIoT4lnWqIxy3lEEVcnleY4.jpg" src="https://dl.dropbox.com/s/m64grw66otbicfw/5cm.%282012%29.mp4"></video>
-			</div>
-				</div>
-  <div id="cntrl"></div>
-  
-  <div id="bawah"></div>
-  
-  <div id="bawah1"></div>
-						
-					<script src="../js/vod.js"></script>
-					
-					</center>
+							</div>
+							<div class="vdo2">
+							<video controls muted autoplay preload='auto' controlslist='nofullscreen nodownload' class='vid1' id="wpo"></video>
+							</div>
 </body>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = [ "../iklan1.mp4"," https://dl.dropbox.com/s/m64grw66otbicfw/5cm.%282012%29.mp4 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://www.themoviedb.org/t/p/w500_and_h282_face/u6B4OIoT4lnWqIxy3lEEVcnleY4.jpg';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+<script src="../js/fvod.js"></script>
 </html>
