@@ -1,5 +1,16 @@
 body {
 				background-color: black;
+				margin: 0;
+				padding: 0;
+}
+
+#butt {
+				font-size: 25px;
+}
+
+video::-webkit-media-controls-panel {
+				position: relative;
+				top: 15px;
 }
 .judul {
 				font-size: 30px;
@@ -17,55 +28,7 @@ body {
 }
 #div1 {
 				position: relative;
-				bottom: 14px;
-}
-.time {
-				margin: 0;
-				padding: 0;
-}
-.date {
-				margin: 0;
-				padding: 0;
-}
-#clock {
-				font-family: "Share Tech Mono", monospace;
-				color: #ffffff;
-				text-align: center;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				color: #daf6ff;
-				text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
-}
-#clock .time {
-  letter-spacing: 0.01em;
-  font-size: 13px;
-  padding: 2px 0;
-}
-#clock .date {
-  letter-spacing: 0.1em;
-  font-size: 13px;
-}
-#marquee1 {
-				text-shadow: 2px 2px 2px red;
-				width: 880px;
-				position: relative;
-				top: 79px;
-				left: 40px;
-				color: lawngreen;
-				font-size: 20px;
-}
-#gambar1 {
-				position: relative;
-				top: 44px;
-				right:  430px; 35px;
-				border-radius: 8px ;
-				width: 100px; height: 34px;
-}
-video {
-				width: 100%;
-				height: auto;
+				bottom: 16px;
 }
 .gambar {
 				border: 3px solid yellow;
@@ -74,31 +37,10 @@ video {
 }
 button {
 				position: relative;
-				bottom: 98px;
+				bottom: 3px;
 				border: 8px transparent solid;
 				border-radius: 13px ;
 				color: red;
 				background-color: transparent;
 				font-size: 10px;
-				margin: 100px;
-}
-.controls > * {
-				flex: 1;
-}
-.progress {
-				flex: 10;
-				position: relative;
-				display: flex;
-				flex-basis: 100%;
-				height: 5px;
-				/* background: rgba(0,0,0,0.5); */
-				background: rgba(255,255,255,0.5);
-				cursor: pointer;
-				height: 7px;
-}
-.progress__filled {
-				width: 50%;
-				background: #00ff40;
-				flex: 0;
-				flex-basis: 0%;
 }
