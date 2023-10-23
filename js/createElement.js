@@ -6,6 +6,10 @@ document.body.appendChild(scrollmenu);
 /*
 
 */
+let a11 = document.createElement('span');
+a11.innerHTML = "<a class='film' href=' tv/index.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/3v22y85Wv0N84fzFvNZxyBrZKYG.jpg ' alt=' Lampor:The.Flying.Casket.(2019) '></button></a>";
+scrollmenu.appendChild(a11);
+
 let a10 = document.createElement('span');
 a10.innerHTML = "<a class='film' href=' vod/AKA.(2023).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/c0Zv7gNTH8LoRnHANhAHGWhGvJC.jpg ' alt=' AKA.(2023).dubbing '></button></a>";
 scrollmenu.appendChild(a10);
