@@ -4,8 +4,12 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-
+avatar.(2009).html
 */
+let a13 = document.createElement('span');
+a13.innerHTML = "<a class='film' href=' vod/avatar.(2009).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg ' alt=' avatar.(2009) '></button></a>";
+scrollmenu.appendChild(a13);
+
 let a11 = document.createElement('span');
 a11.innerHTML = "<a class='film' href=' vod/Lampor_The.Flying.Casket.(2019).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/3v22y85Wv0N84fzFvNZxyBrZKYG.jpg ' alt=' Lampor:The.Flying.Casket.(2019) '></button></a>";
 scrollmenu.appendChild(a11);
