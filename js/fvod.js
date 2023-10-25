@@ -21,20 +21,20 @@ var vidd3 = document.querySelector(".vid3")
 
 setTimeout(function(){
 				vide.pause()
-},1200000);
+},900000);
 setTimeout(function(){
 				vide.play()
-},1208000);
+},908000);
 
 setTimeout(function(){
 				vidy.classList.add("vid3")
 				vidy.play()
-},1200000);
+},900000);
 
 setTimeout(function(){
 				vidy.classList.remove("vid3")
 				vidy.pause()
-},1208000);
+},908000);
 
 
 const video = document.querySelector(".video");
