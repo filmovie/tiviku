@@ -1,18 +1,41 @@
-body {background-color: black; text-align: center;}
+body {
+				background-color: black;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+}
 
-h1 {color: yellowgreen;}
+h1 {
+				color: yellowgreen;
+}
 
-#marquee {color: red;font-size: 30px;}
+#marquee {
+				color: red;
+				font-size: 30px;
+}
 
-button {border: 3px transparent solid;border-radius: 13px ;color: red;background-color: transparent;padding: 15px;}
+button {
+				border: 3px transparent solid;
+				border-radius: 13px;
+				color: red;
+				background-color: transparent;
+				padding: 15px;
+}
 
-.gfilm {border: 3px solid red; border-radius: 13px ;width: 150px;}
+.gfilm {
+				border: 3px solid red;
+				border-radius: 13px ;
+				width: 150px;
+				height: 200px;
+				object-fit: fill;
+}
 
-div.scrollmenu {height: 550px;
-  background-color: black;
-  overflow: auto;
-  
+div.scrollmenu {
+				height: 550px;
+				background-color: black;
+				overflow: auto;
 }
 
 div.scrollmenu a {
-  padding: 7px;
+				padding: 7px;
+}
