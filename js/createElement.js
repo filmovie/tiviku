@@ -4,8 +4,20 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-avatar.(2009).html
+Tertembaknya.Seorang.Residivis.(1985).html
 */
+let a16 = document.createElement('span');
+a16.innerHTML = "<a class='film' href=' vod/Tertembaknya.Seorang.Residivis.(1985).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUV3_OQ5RF0vwulyTKkh5hSw6Hv0S0Mgvgw&usqp=CAU ' alt=' Tertembaknya.Seorang.Residivis.(1985) '></button></a>";
+scrollmenu.appendChild(a16);
+
+let a15 = document.createElement('span');
+a15.innerHTML = "<a class='film' href=' vod/dynasti.warior.(2021).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdZn-_gKLyBRoHtTL7hQwiSeP0bCSwNesAw&usqp=CAU ' alt=' dynasti.warior.(2021) '></button></a>";
+scrollmenu.appendChild(a15);
+
+let a14 = document.createElement('span');
+a14.innerHTML = "<a class='film' href=' vod/Doctor.Strange.in.the.Multiverse.of.Madness.(2022).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg ' alt=' Doctor.Strange.in.the.Multiverse.of.Madness.(2022).Dubbing '></button></a>";
+scrollmenu.appendChild(a14);
+
 let a13 = document.createElement('span');
 a13.innerHTML = "<a class='film' href=' vod/avatar.(2009).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg ' alt=' avatar.(2009) '></button></a>";
 scrollmenu.appendChild(a13);
