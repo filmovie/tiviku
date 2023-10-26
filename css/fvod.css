@@ -9,9 +9,10 @@ video::-webkit-media-controls-panel {
 }
 #myvideo {
 				width: 100%;
-				height: auto;
+				height: 620px;
 				position: relative;
 				bottom: 20px;
+				object-fit: fill;
 }
 #ggg {
 				position: absolute;
