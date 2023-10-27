@@ -7,6 +7,12 @@ video::-webkit-media-controls-panel {
 				position: relative;
 				top: 16px;
 }
+video::-webkit-media-controls-fullscreen-button {
+				opacity: 0;
+}
+video::-webkit-media-controls-mute-button {
+				opacity: 0;
+}
 #myvideo {
 				width: 100%;
 				height: 430px;
