@@ -4,8 +4,12 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Tertembaknya.Seorang.Residivis.(1985).html
+Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing.html
 */
+let a17 = document.createElement('span');
+a17.innerHTML = "<a class='film' href=' vod/Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/sJLA2LwMRqqiY3ateI2ERUJPrL6.jpg ' alt=' Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing '></button></a>";
+scrollmenu.appendChild(a17);
+
 let a16 = document.createElement('span');
 a16.innerHTML = "<a class='film' href=' vod/Tertembaknya.Seorang.Residivis.(1985).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUV3_OQ5RF0vwulyTKkh5hSw6Hv0S0Mgvgw&usqp=CAU ' alt=' Tertembaknya.Seorang.Residivis.(1985) '></button></a>";
 scrollmenu.appendChild(a16);
