@@ -5,7 +5,7 @@ body {
 }
 video::-webkit-media-controls-panel {
 				position: relative;
-				top: 19px;
+				top: 18px;
 }
 #myvideo {
 				width: 100%;
