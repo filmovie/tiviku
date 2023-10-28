@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Ghost.Rider.(2007).html
+Titanic.(1997).html
 */
+let a21 = document.createElement('span');
+a21.innerHTML = "<a class='film' href=' fvod/Titanic.(1997).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg ' alt=' Titanic.(1997) '></button></a>";
+scrollmenu.appendChild(a21);
+
+let a20 = document.createElement('span');
+a20.innerHTML = "<a class='film' href=' fvod/kkn.di.desa.penari.(2022).html '><button><img class='gfilm' src=' https://image.tmdb.org/t/p/w220_and_h330_face/63InZxeGgfNQCoWkImR14fB99AY.jpg ' alt=' kkn.di.desa.penari.(2022) '></button></a>";
+scrollmenu.appendChild(a20);
+
 let a19 = document.createElement('span');
 a19.innerHTML = "<a class='film' href=' vod/Ghost.Rider.(2007).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/8LaVQiXBsnlo7MXCPK1nXTVARUZ.jpg ' alt=' Ghost.Rider.(2007) '></button></a>";
 scrollmenu.appendChild(a19);
