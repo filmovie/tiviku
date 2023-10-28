@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing.html
+Ghost.Rider.(2007).html
 */
+let a19 = document.createElement('span');
+a19.innerHTML = "<a class='film' href=' vod/Ghost.Rider.(2007).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/8LaVQiXBsnlo7MXCPK1nXTVARUZ.jpg ' alt=' Ghost.Rider.(2007) '></button></a>";
+scrollmenu.appendChild(a19);
+
+let a18 = document.createElement('span');
+a18.innerHTML = "<a class='film' href=' vod/kung-fu.Hustle.(2004).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg ' alt=' kung-fu.Hustle.(2004) '></button></a>";
+scrollmenu.appendChild(a18);
+
 let a17 = document.createElement('span');
 a17.innerHTML = "<a class='film' href=' vod/Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/sJLA2LwMRqqiY3ateI2ERUJPrL6.jpg ' alt=' Episode.One.The.Great.Detective.Turned.Small.(2016).dubbing '></button></a>";
 scrollmenu.appendChild(a17);
