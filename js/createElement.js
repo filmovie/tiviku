@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Journey.to.the.West.Ask.tao.(2023).html
+Ghost.Book.Obakezukan.(2022).html
 */
+let a26 = document.createElement('span');
+a26.innerHTML = "<a class='film' href=' fvod/Ghost.Book.Obakezukan.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/l3BeIb50L527NvfE42KNoyOIUro.jpg ' alt=' Ghost.Book.Obakezukan.(2022) '></button></a>";
+scrollmenu.appendChild(a26);
+
+let a25 = document.createElement('span');
+a25.innerHTML = "<a class='film' href=' fvod/F9.the.Fast.Saga.(2021).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg ' alt=' F9.the.Fast.Saga.(2021) '></button></a>";
+scrollmenu.appendChild(a25);
+
 let a24 = document.createElement('span');
 a24.innerHTML = "<a class='film' href=' fvod/Journey.to.the.West.Ask.tao.(2023).html '><button><img class='gfilm' src=' https://dl.dropbox.com/s/ff7fqmj6735l0t4/1680450273-picsay.jpg ' alt=' Journey.to.the.West.Ask.tao.(2023) '></button></a>";
 scrollmenu.appendChild(a24);
