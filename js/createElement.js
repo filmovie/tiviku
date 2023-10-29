@@ -4,8 +4,12 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-daerah.terlarang.(2016).html
+Journey.to.the.West.Ask.tao.(2023).html
 */
+let a24 = document.createElement('span');
+a24.innerHTML = "<a class='film' href=' fvod/Journey.to.the.West.Ask.tao.(2023).html '><button><img class='gfilm' src=' https://dl.dropbox.com/s/ff7fqmj6735l0t4/1680450273-picsay.jpg ' alt=' Journey.to.the.West.Ask.tao.(2023) '></button></a>";
+scrollmenu.appendChild(a24);
+
 let a23 = document.createElement('span');
 a23.innerHTML = "<a class='film' href=' fvod/daerah.terlarang.(2016).html '><button><img class='gfilm' src=' https://upload.wikimedia.org/wikipedia/id/c/c5/Daerah_Terlarang.jpg ' alt=' daerah.terlarang.(2016) '></button></a>";
 scrollmenu.appendChild(a23);
