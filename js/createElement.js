@@ -4,8 +4,20 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Dilwale.(2015).html
+Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing.html
 */
+let a34 = document.createElement('span');
+a34.innerHTML = "<a class='film' href=' fvod/Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ko6AOxIyQvIexLv26DozM0FULJV.jpg ' alt=' Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing '></button></a>";
+scrollmenu.appendChild(a34);
+
+let a33 = document.createElement('span');
+a33.innerHTML = "<a class='film' href=' fvod/disana.mau.disini.mau.(1989).doyok.kadir.html '><button><img class='gfilm' src=' https://dl.dropbox.com/s/56k89eotk09ne6w/1680649394-picsay.jpg ' alt=' disana.mau.disini.mau.(1989).doyok.kadir '></button></a>";
+scrollmenu.appendChild(a33);
+
+let a32 = document.createElement('span');
+a32.innerHTML = "<a class='film' href=' fvod/Crayon.Shin-chan.Very.Tasty!B-class.Gourmet.Survival.(2013).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/n8RhDGTZsXCnwH6cAI7jGjszr72.jpg ' alt=' Crayon.Shin-chan.Very.Tasty!B-class.Gourmet.Survival.(2013).dubbing '></button></a>";
+scrollmenu.appendChild(a32);
+
 let a31 = document.createElement('span');
 a31.innerHTML = "<a class='film' href=' fvod/Dilwale.(2015).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/pYgPu6hhOr61knwbestTx4vSdMb.jpg ' alt=' Dilwale.(2015) '></button></a>";
 scrollmenu.appendChild(a31);
