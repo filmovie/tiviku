@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Train.to.Busan.(2016).html
+Dilwale.(2015).html
 */
+let a31 = document.createElement('span');
+a31.innerHTML = "<a class='film' href=' fvod/Dilwale.(2015).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/pYgPu6hhOr61knwbestTx4vSdMb.jpg ' alt=' Dilwale.(2015) '></button></a>";
+scrollmenu.appendChild(a31);
+
+let a30 = document.createElement('span');
+a30.innerHTML = "<a class='film' href=' fvod/atas.boleh.bawah.boleh.(1986).warkop.dki.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ouVRoKOps7ew5k6MoGo2bgqbtH7.jpg ' alt=' atas.boleh.bawah.boleh.(1986).warkop.dki '></button></a>";
+scrollmenu.appendChild(a30);
+
 let a29 = document.createElement('span');
 a29.innerHTML = "<a class='film' href=' fvod/Train.to.Busan.(2016).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg ' alt=' Train.to.Busan.(2016) '></button></a>";
 scrollmenu.appendChild(a29);
