@@ -4,8 +4,20 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing.html
+Haymaker.(2021).html
 */
+let a37 = document.createElement('span');
+a37.innerHTML = "<a class='film' href=' fvod/Haymaker.(2021).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/s7PcoC8urEDpfgQfX4DBiIfOwnp.jpg ' alt=' Haymaker.(2021) '></button></a>";
+scrollmenu.appendChild(a37);
+
+let a36 = document.createElement('span');
+a36.innerHTML = "<a class='film' href=' fvod/Commitment.(2013).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ybM400b3vesnoNzOlTlAmHeEYPq.jpg ' alt=' Commitment.(2013) '></button></a>";
+scrollmenu.appendChild(a36);
+
+let a35 = document.createElement('span');
+a35.innerHTML = "<a class='film' href=' fvod/Attack.Of.The.Southern.Fried.Zombies.(2017).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/r05Mh8KW1BIPdbV1ayRectn4eZC.jpg ' alt=' Attack.Of.The.Southern.Fried.Zombies.(2017) '></button></a>";
+scrollmenu.appendChild(a35);
+
 let a34 = document.createElement('span');
 a34.innerHTML = "<a class='film' href=' fvod/Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ko6AOxIyQvIexLv26DozM0FULJV.jpg ' alt=' Doraemon.Nobita.Petualangan.Di.Negeri.Angin.(2003).Dubbing '></button></a>";
 scrollmenu.appendChild(a34);
