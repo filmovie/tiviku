@@ -1,0 +1,58 @@
+body {
+				background-color: black;
+				margin: 0;
+				padding: 0;
+}
+
+#butt {
+				font-size: 15px;
+}
+.judul {
+				font-size: 30px;
+				color: gold;
+}
+.kl1 {
+				color: white;
+				font-size: 30px;
+}
+.kl2 {
+				width: 80%;
+				height: auto;
+				font-size: 20px;
+				color: yellow;
+}
+#div1 {
+				position: relative;
+				bottom: 16px;
+}
+.gambar {
+				border: 3px solid yellow;
+				border-radius: 13px ;
+				width: 17%;
+}
+button {
+				position: relative;
+				bottom: 3px;
+				border: 8px transparent solid;
+				border-radius: 13px ;
+				color: red;
+				background-color: transparent;
+				font-size: 10px;
+}
+.gfilm {
+				border: 3px solid red;
+				border-radius: 13px ;
+				width: 150px;
+				height: 200px;
+				object-fit: fill;
+}
+
+div.scrollmenu {
+				height: 550px;
+				background-color: black;
+				overflow: auto;
+}
+
+div.scrollmenu a {
+				padding: 7px;
+}
