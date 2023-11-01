@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-one.piece.(2023).dubbing.html
+Edge.Of.The.World.(2021).html
 */
+let a40 = document.createElement('span');
+a40.innerHTML = "<a class='film' href=' fvod/Edge.Of.The.World.(2021).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ySgG2FILLUnsYvbG07jgnEvqPNv.jpg ' alt=' Edge.Of.The.World.(2021) '></button></a>";
+scrollmenu.appendChild(a40);
+
+let a39 = document.createElement('span');
+a39.innerHTML = "<a class='film' href=' fvod/Chang.Can.Dunk.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ohaIkrTd47z43IuLlwwNg7bi96c.jpg ' alt=' Chang.Can.Dunk.(2023) '></button></a>";
+scrollmenu.appendChild(a39);
+
 let a38 = document.createElement('span');
 a38.innerHTML = "<a class='film' href=' one.piece.(2023).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/lXl3ZbY5TksOdt6eYgdyg6vsnFW.jpg ' alt=' one.piece.(2023).dubbing '></button></a>";
 scrollmenu.appendChild(a38);
