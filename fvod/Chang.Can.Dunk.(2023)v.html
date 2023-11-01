@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>Page title</title>
+				<link rel="stylesheet" href="../css/fvod.css"></link>
+</head>
+<body>
+				<div id="ggg">
+								<div class="tiviku"></div>
+								<div id='clock'><p class='date'>{{ date }}</p><p class='time'>{{ time }}</p></div>								
+				<video controls preload='auto' controlslist='nofullscreen nodownload' class='video' id='myvideo' ></video>
+				
+				<div class='controls'> <div class='progress'> <div class='progress__filled'></div> </div> <button class='controls__button' data-skip='-10'><b>« 10s</b></button> <button class='controls__button toggleButton' title='Toggle Play'><b>▶</b></button> <button class='controls__button' data-skip='25'><b>10s »</b></button> </div> </div>
+							
+							</div>
+							<div class="vdo2">
+							<video controls muted autoplay preload='auto' controlslist='nofullscreen nodownload' class='vid1' id="wpo"></video>
+							</div>
+</body>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = ["../iklan1.mp4"," https://dl.dropbox.com/s/bkbft2fz6tv3x27/Chang.Can.Dunk.%282023%29.mp4 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://www.themoviedb.org/t/p/w500_and_h282_face/mQfClRXf0NXi1Q0tFtpv1b4SYew.jpg';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+<script src="../js/fvod.js"></script>
+</html>
