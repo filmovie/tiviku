@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Edge.Of.The.World.(2021).html
+DreadOut.(2019).html
 */
+let a42 = document.createElement('span');
+a42.innerHTML = "<a class='film' href=' fvod/DreadOut.(2019).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/cakRX3ujz1BchB4PKi1TZGqJh60.jpg ' alt=' DreadOut.(2019) '></button></a>";
+scrollmenu.appendChild(a42);
+
+let a41 = document.createElement('span');
+a41.innerHTML = "<a class='film' href=' fvod/Devotion.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/26yQPXymbWeCLKwcmyL8dRjAzth.jpg ' alt=' Devotion.(2022) '></button></a>";
+scrollmenu.appendChild(a41);
+
 let a40 = document.createElement('span');
 a40.innerHTML = "<a class='film' href=' fvod/Edge.Of.The.World.(2021).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ySgG2FILLUnsYvbG07jgnEvqPNv.jpg ' alt=' Edge.Of.The.World.(2021) '></button></a>";
 scrollmenu.appendChild(a40);
