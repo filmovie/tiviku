@@ -20,19 +20,14 @@ var vidy = document.querySelector(".vid1");
 var vidd3 = document.querySelector(".vid3")
 
 setTimeout(function(){
-				vide.pause()
-},900000);
-setTimeout(function(){
-				vide.play()
-},908000);
-
-setTimeout(function(){
 				vidy.classList.add("vid3")
+				vide.pause()
 				vidy.play()
 },900000);
 
 setTimeout(function(){
 				vidy.classList.remove("vid3")
+				vide.play()
 				vidy.pause()
 },908000);
 
