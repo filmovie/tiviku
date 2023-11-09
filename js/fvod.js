@@ -13,7 +13,7 @@ var ply = document.getElementById("wpo");
 ply.src ='../iklan1.mp4';
 
 var vide = document.getElementById("myvideo");
-vide.src ='../iklan1.mp4';
+vide.src ='https://dl.dropbox.com/scl/fi/p57infaytbffqiofwt7c4/1p.mp4?rlkey=8pexarsdkxi95kn6jbm2at4sv&dl=0';
 
 var vidy = document.querySelector(".vid1");
 
@@ -21,20 +21,20 @@ var vidd3 = document.querySelector(".vid3")
 
 setTimeout(function(){
 				vide.pause()
-},600000);
+},900000);
 setTimeout(function(){
 				vide.play()
-},609000);
+},908000);
 
 setTimeout(function(){
 				vidy.classList.add("vid3")
 				vidy.play()
-},600000);
+},900000);
 
 setTimeout(function(){
 				vidy.classList.remove("vid3")
 				vidy.pause()
-},609000);
+},908000);
 
 
 const video = document.querySelector(".video");
