@@ -5,7 +5,7 @@ document.body.appendChild(script);
 var ggg = document.querySelector('.tiviku');
 
 let tiviku = document.createElement('img');
-tiviku.src="../tiviku.gif";
+tiviku.src="https://github.com/filmovie/tiviku/blob/main/gambar/tiviku.png?raw=true";
 tiviku.className="tiv";
 ggg.appendChild(tiviku);
 
@@ -23,13 +23,13 @@ setTimeout(function(){
 				vidy.classList.add("vid3")
 				vide.pause()
 				vidy.play()
-},900000);
+},600000);
 
-setTimeout(function(){
+vidy.addEventListener("ended", function() {
 				vidy.classList.remove("vid3")
 				vide.play()
 				vidy.pause()
-},908000);
+});
 
 
 const video = document.querySelector(".video");
