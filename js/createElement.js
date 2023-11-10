@@ -4,8 +4,12 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing.html
+Squid.Game.(2021).Dubbing.html
 */
+let a64 = document.createElement('span');
+a64.innerHTML = "<a class='film' href=' Squid.Game.(2021).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg ' alt=' Squid.Game.(2021).Dubbing '></button></a>";
+scrollmenu.appendChild(a64);
+
 let a63 = document.createElement('span');
 a63.innerHTML = "<a class='film' href=' fvod/Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/f9glpkL7Ihh2Ys6fECzr0Wdl9SD.jpg ' alt=' Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing '></button></a>";
 scrollmenu.appendChild(a63);
