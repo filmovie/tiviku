@@ -15,7 +15,7 @@ video::-webkit-media-controls-mute-button {
 }
 #myvideo {
 				width: 100%;
-				height: 430px;
+				height: 530px;
 				position: relative;
 				bottom: 23px;
 				object-fit: fill;
