@@ -20,6 +20,10 @@ var vidy = document.querySelector(".vid1");
 var vidd3 = document.querySelector(".vid3")
 
 setTimeout(function(){
+				vidy.pause()
+},1000);
+
+setTimeout(function(){
 				vidy.classList.add("vid3")
 				vide.pause()
 				vidy.play()

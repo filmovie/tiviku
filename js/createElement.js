@@ -4,8 +4,28 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-All.the.Places.(2023).html
+Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing.html
 */
+let a63 = document.createElement('span');
+a63.innerHTML = "<a class='film' href=' fvod/Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/f9glpkL7Ihh2Ys6fECzr0Wdl9SD.jpg ' alt=' Detective.Conan.Movie.1.The.Time-Bombed.Skyscraper.(1997).Dubbing '></button></a>";
+scrollmenu.appendChild(a63);
+
+let a62 = document.createElement('span');
+a62.innerHTML = "<a class='film' href=' fvod/Captain.(2022).Telugu.True.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/rUkBlZwIAfg6iAztBrGhExCYqtk.jpg ' alt=' Captain.(2022).Telugu.True '></button></a>";
+scrollmenu.appendChild(a62);
+
+let a61 = document.createElement('span');
+a61.innerHTML = "<a class='film' href=' fvod/Berbalas.Kejam.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/3Om65au1m6g8pmpYcIICAQGI6h7.jpg ' alt=' Berbalas.Kejam.(2023) '></button></a>";
+scrollmenu.appendChild(a61);
+
+let a60 = document.createElement('span');
+a60.innerHTML = "<a class='film' href=' fvod/Hichki.(2018).html '><button><img class='gfilm' src=' https://image.tmdb.org/t/p/w220_and_h330_face/awN7MPVHcubWEqfo7T5jidx3xYY.jpg ' alt=' Hichki.(2018) '></button></a>";
+scrollmenu.appendChild(a60);
+
+let a59 = document.createElement('span');
+a59.innerHTML = "<a class='film' href=' fvod/Call.Of.The.Unseen.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/peuL3gyrAsLNiZLSr6SE0NJeBNv.jpg ' alt=' Call.Of.The.Unseen.(2022) '></button></a>";
+scrollmenu.appendChild(a59);
+
 let a58 = document.createElement('span');
 a58.innerHTML = "<a class='film' href=' fvod/All.the.Places.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/1mdYZDqYcRjD4yF8MCh8OPtXApI.jpg ' alt=' All.the.Places.(2023) '></button></a>";
 scrollmenu.appendChild(a58);
