@@ -4,8 +4,21 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-The.Point.Men.(2023).html
+Gemini.Man.(2019).html
 */
+
+let a73 = document.createElement('span');
+a73.innerHTML = "<a class='film' href=' fvod/Gemini.Man.(2019).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg ' alt=' Gemini.Man.(2019) '></button></a>";
+scrollmenu.appendChild(a73);
+
+let a72 = document.createElement('span');
+a72.innerHTML = "<a class='film' href=' fvod/Fabricated.City.(2017).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/8tE4MhhuWHize6pNyxAtakUyNZc.jpg ' alt=' Fabricated.City.(2017) '></button></a>";
+scrollmenu.appendChild(a72);
+
+let a71 = document.createElement('span');
+a71.innerHTML = "<a class='film' href=' fvod/Die.Hart.The.Movie.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/ff9iMXJjtRdm58nRzM88sNr5CTu.jpg ' alt=' Die.Hart.The.Movie.(2023) '></button></a>";
+scrollmenu.appendChild(a71);
+
 let a70 = document.createElement('span');
 a70.innerHTML = "<a class='film' href=' fvod/The.Point.Men.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/nBwFfruuNu5JAkeum499yykZibo.jpg ' alt=' The.Point.Men.(2023) '></button></a>";
 scrollmenu.appendChild(a70);
