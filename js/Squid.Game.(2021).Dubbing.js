@@ -15,3 +15,7 @@ frm.appendChild(form);
 let a1 = document.createElement('span');
 a1.innerHTML = "<a class='film' href=' fvod/1.Squid.Game.(2021).Dubbingv.html '><button><img class='gfilm' src=' gambar/squid1.jpg ' alt=' eps.1 '></button></a>";
 scrollmenu.appendChild(a1);
+
+let a2 = document.createElement('span');
+a2.innerHTML = "<a class='film' href=' fvod/2.Squid.Game.(2021).Dubbingv.html '><button><img class='gfilm' src=' gambar/squid2.jpg ' alt=' eps.2 '></button></a>";
+scrollmenu.appendChild(a2);
