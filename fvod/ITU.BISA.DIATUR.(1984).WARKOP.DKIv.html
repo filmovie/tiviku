@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+				<meta charset="UTF-8">
+				<title>Page title</title>
+				<link rel="stylesheet" href="../vodi/cs.css"></link>
+</head>
+<body>
+				<div class="vdi1" id="vdi1">
+								
+								<video controls controlslist='nofullscreen nodownload' class='video' id='myvideo' ></video>
+								<div class='controls'> <div class='progress'> <div class='progress__filled'></div> </div> <button class='controls__button' data-skip='-10'><b>« 10s</b></button> <button class='controls__button toggleButton' title='Toggle Play'><b>▶</b></button> <button class='controls__button' data-skip='25'><b>10s »</b></button> </div> </div>
+								
+				</div>
+</body>
+<script>
+				
+				var myvid = document.getElementById('myvideo');
+var myvids = [""," https://dl.dropbox.com/scl/fi/uq0m3m1f3tms2e30cbu2o/ITU.BISA.DIATUR.-1984-.WARKOP.DKI.mp4?rlkey=ed801d4q5xm6nh4g5km34ej6u&dl=0 "," end " ];
+var activeVideo = 0;
+
+myvid.poster ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RtauP7fuoWfajX9Bd8ZuvkEp3axB4eSKyw&usqp=CAU';
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});</script>
+<script src="../vodi/js.js"></script>
+<script src="../vodi/time.js"></script>
+</html>
