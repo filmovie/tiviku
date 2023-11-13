@@ -4,8 +4,28 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Gemini.Man.(2019).html
+The.Super.Mario.Bros..Movie.(2023).dubbing.html
 */
+
+let a78 = document.createElement('span');
+a78.innerHTML = "<a class='film' href=' fvod/The.Super.Mario.Bros..Movie.(2023).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/iXD2VjzyXmOGJrR0Kt46IUpH3DE.jpg ' alt=' The.Super.Mario.Bros..Movie.(2023).dubbing '></button></a>";
+scrollmenu.appendChild(a78);
+
+let a77 = document.createElement('span');
+a77.innerHTML = "<a class='film' href=' fvod/Ratu.Buaya.Putih.(1988).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/4iyL0l2q6pJFSrhxI5YwxDmyB7Z.jpg ' alt=' Ratu.Buaya.Putih.(1988) '></button></a>";
+scrollmenu.appendChild(a77);
+
+let a76 = document.createElement('span');
+a76.innerHTML = "<a class='film' href=' fvod/Kaluskos.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/tSMIEtpdwR3wb422I1dvL114jlz.jpg ' alt=' Kaluskos.(2022) '></button></a>";
+scrollmenu.appendChild(a76);
+
+let a75 = document.createElement('span');
+a75.innerHTML = "<a class='film' href=' fvod/jumanji.(1995).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/vgpXmVaVyUL7GGiDeiK1mKEKzcX.jpg ' alt=' jumanji.(1995).dubbing '></button></a>";
+scrollmenu.appendChild(a75);
+
+let a74 = document.createElement('span');
+a74.innerHTML = "<a class='film' href=' fvod/Inang.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/A9iIzMGfTHSnKGRtFHzz6Zv0WCs.jpg ' alt=' Inang.(2022) '></button></a>";
+scrollmenu.appendChild(a74);
 
 let a73 = document.createElement('span');
 a73.innerHTML = "<a class='film' href=' fvod/Gemini.Man.(2019).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg ' alt=' Gemini.Man.(2019) '></button></a>";
