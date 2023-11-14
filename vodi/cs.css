@@ -5,7 +5,7 @@ body {
 }
 .vdi1 {
 				width: 100%;
-				height: 540px;
+				height: 548px;
 				object-fit: fill;
 				position: absolute;
 				left: 50%;
@@ -14,9 +14,9 @@ body {
 }
 #myvideo {
 				position: relative;
-				bottom: 3px;
+				bottom: 4px;
 				width: 100%;
-				height: 540px;
+				height: 548px;
 				object-fit: fill;
 }
 .controls {
@@ -53,7 +53,7 @@ button {
 #clock {
 				text-align: center;
 				position: relative;
-				bottom: 613px;
+				bottom: 614px;
 				color: whitesmoke;
 }
 .time {
@@ -66,10 +66,10 @@ button {
 }
 #clock .time {
   letter-spacing: 0.01em;
-  font-size: 11px;
+  font-size: 10px;
   padding: 2px 0;
 }
 #clock .date {
   letter-spacing: 0.1em;
-  font-size: 11px;
+  font-size: 10px;
 }
