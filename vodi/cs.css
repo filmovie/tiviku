@@ -6,17 +6,17 @@ body {
 .vdi1 {
 				width: 100%;
 				height: 548px;
-				object-fit: fill;
 				position: absolute;
+				background: beige;
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%,-50%);
 }
 #myvideo {
 				position: relative;
-				bottom: 4px;
+				bottom: 3px;
 				width: 100%;
-				height: 548px;
+				height: 545px;
 				object-fit: fill;
 }
 .controls {
@@ -46,14 +46,12 @@ button {
 				border-radius: 8px ;
 				width: 110px;
 				height: 35px;
-				z-index: 1;
-				background: transparent;
 }
 
 #clock {
 				text-align: center;
 				position: relative;
-				bottom: 614px;
+				bottom: 616px;
 				color: whitesmoke;
 }
 .time {
@@ -66,10 +64,10 @@ button {
 }
 #clock .time {
   letter-spacing: 0.01em;
-  font-size: 10px;
+  font-size: 11px;
   padding: 2px 0;
 }
 #clock .date {
   letter-spacing: 0.1em;
-  font-size: 10px;
+  font-size: 11px;
 }
