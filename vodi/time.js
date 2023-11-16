@@ -15,7 +15,7 @@ var clock = new Vue({
     }
 });
 
-var week = ['MINGGU', 'SENIN', 'SELASA', 'RABU', 'KAMIIS', 'JUMAT', 'SABTU'];
+var week = ["MINGGU", "SENIN", "SELASA", "RABU", "KAMIS", "JUM'AT", "SABTU"];
 var timerID = setInterval(updateTime, 1000);
 updateTime();
 function updateTime() {
