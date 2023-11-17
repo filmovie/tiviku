@@ -4,8 +4,24 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-sesepuh.majapahit.(1995).html
+Smallfoot.(2018).html
 */
+let a95 = document.createElement('span');
+a95.innerHTML = "<a class='film' href=' fvod/Smallfoot.(2018).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/zfaiO7QgpcvR8XDOMokWLRfKeTE.jpg ' alt=' Smallfoot.(2018) '></button></a>";
+scrollmenu.appendChild(a95);
+
+let a94 = document.createElement('span');
+a94.innerHTML = "<a class='film' href=' fvod/Jujutsu.Kaisen.0.The.Movie.(2021).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/7wZAwXRt8cZSavUkZxKCc2dDnaE.jpg ' alt=' Jujutsu.Kaisen.0.The.Movie.(2021) '></button></a>";
+scrollmenu.appendChild(a94);
+
+let a93 = document.createElement('span');
+a93.innerHTML = "<a class='film' href=' fvod/Ghost.Rider.(2007).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/8LaVQiXBsnlo7MXCPK1nXTVARUZ.jpg ' alt=' Ghost.Rider.(2007) '></button></a>";
+scrollmenu.appendChild(a93);
+
+let a92 = document.createElement('span');
+a92.innerHTML = "<a class='film' href=' fvod/5cm.(2012).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/y43O9tj6yo4h1shx58YGBsbjme4.jpg ' alt=' 5cm.(2012) '></button></a>";
+scrollmenu.appendChild(a92);
+
 let a91 = document.createElement('span');
 a91.innerHTML = "<a class='film' href=' fvod/sesepuh.majapahit.(1995).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/sWT9Pk3RnP0OwA3By12LTPfyJbP.jpg ' alt=' sesepuh.majapahit.(1995), '></button></a>";
 scrollmenu.appendChild(a91);
