@@ -6,6 +6,10 @@ document.body.appendChild(scrollmenu);
 /*
 Smallfoot.(2018).html
 */
+let a96 = document.createElement('span');
+a96.innerHTML = "<a class='film' href=' bluelock.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/jYuJWGLG5DighDLDSUdZuhH1wkq.jpg ' alt=' bluelock.(2022) '></button></a>";
+scrollmenu.appendChild(a96);
+
 let a95 = document.createElement('span');
 a95.innerHTML = "<a class='film' href=' fvod/Smallfoot.(2018).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/zfaiO7QgpcvR8XDOMokWLRfKeTE.jpg ' alt=' Smallfoot.(2018) '></button></a>";
 scrollmenu.appendChild(a95);
