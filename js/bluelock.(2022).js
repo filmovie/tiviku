@@ -19,3 +19,7 @@ scrollmenu.appendChild(a1);
 let a2 = document.createElement('span');
 a2.innerHTML = "<a class='film' href=' fvod/2.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block2.jpg ' alt=' eps.02 '></button></a>";
 scrollmenu.appendChild(a2);
+
+let a3 = document.createElement('span');
+a3.innerHTML = "<a class='film' href=' fvod/3.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block3.jpg ' alt=' eps.03 '></button></a>";
+scrollmenu.appendChild(a3);
