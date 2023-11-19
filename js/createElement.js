@@ -18,10 +18,6 @@ let a1 = document.createElement('span');
 a1.innerHTML = "<a class='film' href=' vod/The.Raid_Redemption.(2011).html '><button><img class='gfilm' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJJdrTCfoX_2XWFkhW6-K-FuNDCZMvIzDng&usqp=CAU' alt=' The.Raid_Redemption.(2011) '></button></a>";
 scrollmenu.appendChild(a1);
 
-let a99 = document.createElement('span');
-a99.innerHTML = "<a class='film' href=' fvod/Medieval.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/eeUNWsdoiOijOZAMaWFDA5Pb1n8.jpg ' alt=' Medieval.(2022) '></button></a>";
-scrollmenu.appendChild(a99);
-
 let a98 = document.createElement('span');
 a98.innerHTML = "<a class='film' href=' fvod/Kill.Her.Goats.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/oHVuaIHBX0dqqBUbvYyHgkhyCr8.jpg ' alt=' Kill.Her.Goats.(2023) '></button></a>";
 scrollmenu.appendChild(a98);
