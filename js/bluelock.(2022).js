@@ -31,3 +31,11 @@ scrollmenu.appendChild(a4);
 let a5 = document.createElement('span');
 a5.innerHTML = "<a class='film' href=' fvod/5.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block5.jpg ' alt=' eps.05 '></button></a>";
 scrollmenu.appendChild(a5);
+
+let a6 = document.createElement('span');
+a6.innerHTML = "<a class='film' href=' fvod/6.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block6.jpg ' alt=' eps.06 '></button></a>";
+scrollmenu.appendChild(a6);
+
+let a7 = document.createElement('span');
+a7.innerHTML = "<a class='film' href=' fvod/7.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block7.jpg ' alt=' eps.07 '></button></a>";
+scrollmenu.appendChild(a7);
