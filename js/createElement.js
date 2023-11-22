@@ -10,6 +10,14 @@ let a102 = document.createElement('span');
 a102.innerHTML = "<a class='film' href=' fvod/Fullmetal.Alchemist.the.Revenge.of.Scar.(2022).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/c5OwwBNyJkwyroIOIJL9IiRjydR.jpg ' alt=' Fullmetal.Alchemist.the.Revenge.of.Scar.(2022).dubbing '></button></a>";
 scrollmenu.appendChild(a102);
 
+let a19 = document.createElement('span');
+a19.innerHTML = "<a class='film' href=' fvod/Jailangkung.Sandekala.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/t86d7Us4hW9yVqf8ctDj834d1RD.jpg ' alt=' Jailangkung.Sandekala.(2022) '></button></a>";
+scrollmenu.appendChild(a19);
+
+let a15 = document.createElement('span');
+a15.innerHTML = "<a class='film' href=' vod/dynasti.warior.(2021).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdZn-_gKLyBRoHtTL7hQwiSeP0bCSwNesAw&usqp=CAU ' alt=' dynasti.warior.(2021) '></button></a>";
+scrollmenu.appendChild(a15);
+
 let a3 = document.createElement('span');
 a3.innerHTML = "<a class='film' href=' vod/A.Savannah.Haunting.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/fpxmnwY9mQk05JVya6lsbvUm3mW.jpg ' alt=' A.Savannah.Haunting.(2022) '></button></a>";
 scrollmenu.appendChild(a3);
@@ -354,10 +362,6 @@ let a20 = document.createElement('span');
 a20.innerHTML = "<a class='film' href=' fvod/kkn.di.desa.penari.(2022).html '><button><img class='gfilm' src=' https://image.tmdb.org/t/p/w220_and_h330_face/63InZxeGgfNQCoWkImR14fB99AY.jpg ' alt=' kkn.di.desa.penari.(2022) '></button></a>";
 scrollmenu.appendChild(a20);
 
-let a19 = document.createElement('span');
-a19.innerHTML = "<a class='film' href=' vod/Ghost.Rider.(2007).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/8LaVQiXBsnlo7MXCPK1nXTVARUZ.jpg ' alt=' Ghost.Rider.(2007) '></button></a>";
-scrollmenu.appendChild(a19);
-
 let a18 = document.createElement('span');
 a18.innerHTML = "<a class='film' href=' vod/kung-fu.Hustle.(2004).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg ' alt=' kung-fu.Hustle.(2004) '></button></a>";
 scrollmenu.appendChild(a18);
@@ -369,10 +373,6 @@ scrollmenu.appendChild(a17);
 let a16 = document.createElement('span');
 a16.innerHTML = "<a class='film' href=' vod/Tertembaknya.Seorang.Residivis.(1985).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUV3_OQ5RF0vwulyTKkh5hSw6Hv0S0Mgvgw&usqp=CAU ' alt=' Tertembaknya.Seorang.Residivis.(1985) '></button></a>";
 scrollmenu.appendChild(a16);
-
-let a15 = document.createElement('span');
-a15.innerHTML = "<a class='film' href=' vod/dynasti.warior.(2021).html '><button><img class='gfilm' src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdZn-_gKLyBRoHtTL7hQwiSeP0bCSwNesAw&usqp=CAU ' alt=' dynasti.warior.(2021) '></button></a>";
-scrollmenu.appendChild(a15);
 
 let a14 = document.createElement('span');
 a14.innerHTML = "<a class='film' href=' vod/Doctor.Strange.in.the.Multiverse.of.Madness.(2022).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg ' alt=' Doctor.Strange.in.the.Multiverse.of.Madness.(2022).Dubbing '></button></a>";
