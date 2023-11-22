@@ -39,3 +39,15 @@ scrollmenu.appendChild(a6);
 let a7 = document.createElement('span');
 a7.innerHTML = "<a class='film' href=' fvod/7.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block7.jpg ' alt=' eps.07 '></button></a>";
 scrollmenu.appendChild(a7);
+
+let a8 = document.createElement('span');
+a8.innerHTML = "<a class='film' href=' fvod/8.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block8.jpg ' alt=' eps.08 '></button></a>";
+scrollmenu.appendChild(a8);
+
+let a9 = document.createElement('span');
+a9.innerHTML = "<a class='film' href=' fvod/9.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block9.jpg ' alt=' eps.09 '></button></a>";
+scrollmenu.appendChild(a9);
+
+let a10 = document.createElement('span');
+a10.innerHTML = "<a class='film' href=' fvod/10.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block10.jpg ' alt=' eps.10 '></button></a>";
+scrollmenu.appendChild(a10);
