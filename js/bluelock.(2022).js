@@ -51,3 +51,15 @@ scrollmenu.appendChild(a9);
 let a10 = document.createElement('span');
 a10.innerHTML = "<a class='film' href=' fvod/10.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block10.jpg ' alt=' eps.10 '></button></a>";
 scrollmenu.appendChild(a10);
+
+let a11 = document.createElement('span');
+a11.innerHTML = "<a class='film' href=' fvod/11.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block11.jpg ' alt=' eps.11 '></button></a>";
+scrollmenu.appendChild(a11);
+
+let a12 = document.createElement('span');
+a12.innerHTML = "<a class='film' href=' fvod/12.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block12.jpg ' alt=' eps.12 '></button></a>";
+scrollmenu.appendChild(a12);
+
+let a13 = document.createElement('span');
+a13.innerHTML = "<a class='film' href=' fvod/13.bluelock.(2022)v.html '><button><img class='gfilm' src=' gambar/block13.jpg ' alt=' eps.13 '></button></a>";
+scrollmenu.appendChild(a13);
