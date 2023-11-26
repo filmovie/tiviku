@@ -4,8 +4,16 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Captain.Tsubasa.Road.to.(2002).dubbing.html
+Re.Member.(2022).html
 */
+let a111 = document.createElement('span');
+a111.innerHTML = "<a class='film' href=' fvod/Re.Member.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/cCTmZ93aBZ1FwHntiDpa2Lj92zs.jpg ' alt=' Re.Member.(2022) '></button></a>";
+scrollmenu.appendChild(a111);
+
+let a110 = document.createElement('span');
+a110.innerHTML = "<a class='film' href=' fvod/Khanzab.(2023).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/jsD9Xno9bCaDtGm6Av9yr4T5SUq.jpg ' alt=' Khanzab.(2023) '></button></a>";
+scrollmenu.appendChild(a110);
+
 let a109 = document.createElement('span');
 a109.innerHTML = "<a class='film' href=' Captain.Tsubasa.Road.to.(2002).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/mFQYzHQr6IpzjR3bxFYE2pHBBny.jpg ' alt=' Captain.Tsubasa.Road.to.(2002).dubbing '></button></a>";
 scrollmenu.appendChild(a109);
