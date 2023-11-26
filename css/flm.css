@@ -41,12 +41,6 @@ button {
 }
 
 .gf {
-				width: 150px;
-				height: 100px;
-				object-fit: fill;
-}
-
-.gfil {
 				font-size: 30px;
 				color: red;
 }
