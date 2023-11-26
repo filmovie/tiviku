@@ -39,6 +39,18 @@ button {
 				background-color: transparent;
 				font-size: 10px;
 }
+
+.gf {
+				width: 150px;
+				height: 100px;
+				object-fit: fill;
+}
+
+.gfil {
+				font-size: 30px;
+				color: red;
+}
+
 .gfilm {
 				border: 3px solid red;
 				border-radius: 13px ;
