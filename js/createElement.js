@@ -4,8 +4,12 @@ scrollmenu.className = "scrollmenu";
 document.body.appendChild(scrollmenu);
 
 /*
-Re.Member.(2022).html
+Detective.Conan.Movie.3.The.Last.Wizard.of.the.Century.(1999).Dubbing
 */
+let a112 = document.createElement('span');
+a112.innerHTML = "<a class='film' href=' fvod/Detective.Conan.Movie.3.The.Last.Wizard.of.the.Century.(1999).Dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/q2v6JmGMVQR0UhUirXuuzXUcAnN.jpg ' alt=' Detective.Conan.Movie.3.The.Last.Wizard.of.the.Century.(1999).Dubbing '></button></a>";
+scrollmenu.appendChild(a112);
+
 let a111 = document.createElement('span');
 a111.innerHTML = "<a class='film' href=' fvod/Re.Member.(2022).html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w188_and_h282_bestv2/cCTmZ93aBZ1FwHntiDpa2Lj92zs.jpg ' alt=' Re.Member.(2022) '></button></a>";
 scrollmenu.appendChild(a111);
