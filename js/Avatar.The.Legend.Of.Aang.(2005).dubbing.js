@@ -27,3 +27,7 @@ scrollmenu.appendChild(a3);
 let a4 = document.createElement('span');
 a4.innerHTML = "<a class='film' href=' fvod/4.Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button class='gf'><p><b>eps.04</b></p></button></a>";
 scrollmenu.appendChild(a4);
+
+let a5 = document.createElement('span');
+a5.innerHTML = "<a class='film' href=' fvod/5.Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button class='gf'><p><b>eps.05</b></p></button></a>";
+scrollmenu.appendChild(a5);
