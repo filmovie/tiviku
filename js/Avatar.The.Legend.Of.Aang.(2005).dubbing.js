@@ -43,3 +43,11 @@ scrollmenu.appendChild(a7);
 let a8 = document.createElement('span');
 a8.innerHTML = "<a class='film' href=' fvod/8.Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button class='gf'><p><b>eps.08</b></p></button></a>";
 scrollmenu.appendChild(a8);
+
+let a9 = document.createElement('span');
+a9.innerHTML = "<a class='film' href=' fvod/9.Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button class='gf'><p><b>eps.09</b></p></button></a>";
+scrollmenu.appendChild(a9);
+
+let a10 = document.createElement('span');
+a10.innerHTML = "<a class='film' href=' fvod/10.Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button class='gf'><p><b>eps.10</b></p></button></a>";
+scrollmenu.appendChild(a10);
