@@ -6,6 +6,9 @@ document.body.appendChild(scrollmenu);
 /*
 Avatar.The.Legend.Of.Aang.(2005).dubbing.html
 */
+let a115 = document.createElement('span');
+a115.innerHTML = "<a class='film' href=' fvod/A.Bug's.Life.(1998).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg ' alt=' A.Bug's.Life.(1998).dubbing '></button></a>";
+scrollmenu.appendChild(a115);
 let a114 = document.createElement('span');
 a114.innerHTML = "<a class='film' href=' Avatar.The.Legend.Of.Aang.(2005).dubbing.html '><button><img class='gfilm' src=' https://www.themoviedb.org/t/p/w220_and_h330_face/cHFZA8Tlv03nKTGXhLOYOLtqoSm.jpg ' alt=' Avatar.The.Legend.Of.Aang.(2005).dubbing '></button></a>";
 scrollmenu.appendChild(a114);
